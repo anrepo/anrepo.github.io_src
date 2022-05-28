@@ -1,0 +1,17 @@
+baseURL = "http://anrepo.github.io/"
+languageCode = "ru"
+title = "Profile Project"
+theme = "template-theme"
+# theme = "bootstrap-theme"
+
+# false - добавит запись с версией Hugo первой строкой в тег <head>
+# например, такую: '<meta name="generator" content="Hugo 0.67.1" />'
+disableHugoGeneratorInject = true
+
+[markup]
+    # Goldmark - это библиотека Hugo для использования языка разметки "Markdown"
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+            # unsafe - со значением "true" позвоняет использовать html и javascript в файлах с расширением *.md (Markdown)
+            # по умолчанию unsafe = false
+            unsafe = true

@@ -1,0 +1,1 @@
+cls && hugo server -w
