@@ -1,3 +1,5 @@
+let introduceCarousel;
+
 // // Передача аргументов
 // function multiply(a, b, c) {
 //     return a * b * c;
@@ -16,12 +18,12 @@
 // console.log(multicarr(1)(2)(3));
 
 
-$(document).ready(function() {
-	$('#fullpage').fullpage({
-		autoScrolling:true,
-		scrollHorizontally: true
-	});
+// $(document).ready(function() {
+// 	$('#fullpage').fullpage({
+// 		autoScrolling:true,
+// 		scrollHorizontally: true
+// 	});
 
-	//methods
-	$.fn.fullpage.setAllowScrolling(false);
-});
+// 	//methods
+// 	$.fn.fullpage.setAllowScrolling(false);
+// });
