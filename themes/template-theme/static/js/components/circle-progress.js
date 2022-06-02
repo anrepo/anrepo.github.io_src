@@ -1,23 +1,39 @@
 let progressCircle = (function() {
 
-    const circle = document.querySelector('.progress-circle .progress');
-    const radius = circle.r.baseVal.value;      // радиус
-    const circumference = 2 * Math.PI * radius; // длина окружности
+    let circles = {};
 
-    circle.style.strokeDasharray = `${circumference} ${circumference}`;
-    circle.style.strokeDashoffset = circumference;
+    class Circle {
+        constructor(element, name) {
+            this.name = name;
+            this.percent = 0;
+            this.element = element;
+            this.radius = element.r.baseVal.value;
+            this.circumference = 2 * Math.PI * this.radius;
+            this.element.style.strokeDasharray = `${this.circumference} ${this.circumference}`;
+            this.element.style.strokeDashoffset = this.circumference;
+        }
 
-    console.log(circumference);
+        setProgress(percent) {
+            this.percent = percent;
+            this.element.style.strokeDashoffset = this.circumference - percent / 100 * this.circumference;
+        }
+    }
 
-    function setProgress(percent) {
-        const offset = circumference - percent / 100 * circumference;
-        circle.style.strokeDashoffset = offset;
+    function init() {
+        const circlesProgress = document.querySelectorAll('.progress-circle');
+
+        for (let item of circlesProgress) {
+            const itemProgress = item.querySelector('.progress');
+            const itemName = item.getAttribute("data-skill");
+
+            circles[itemName] = new Circle(itemProgress, itemName);
+        }
     }
     
 
     return {
         init: init,
-        setProgress: setProgress
+        circles: circles
     }
 
 })();

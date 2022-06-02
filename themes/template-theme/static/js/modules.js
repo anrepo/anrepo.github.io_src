@@ -17,3 +17,12 @@ cirleProgressBar = progressCircle;
  * Первичный запуск методов
  */
 introduceCarousel.init();
+
+
+// Инициализация круговых прогресс баров скилов
+cirleProgressBar.init();
+
+// Установка значений для кругов прогресса
+cirleProgressBar.circles.html.setProgress(84);
+cirleProgressBar.circles.css.setProgress(71);
+cirleProgressBar.circles.js.setProgress(76);

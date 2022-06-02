@@ -3,6 +3,10 @@
 }
 
 .progress-circle {
+    --stroke-color-green: #00FF43;
+    --stroke-color-blue: #00A1FF;
+    --stroke-color-purple: #FF04F7;
+    --stroke-color_thrush-eggs: #00DBDB;
     position: relative;
     display: inline-block;
 }
@@ -25,7 +29,7 @@ svg.progress-bar {
 circle.progress {
     // цвет фона и границы; ширина границы
     fill: transparent;
-    stroke: #00bdbd;
+    stroke: var(--stroke-color-blue);
     stroke-width: 10px;
     // скругление углов линии границы
     stroke-linecap: round;
@@ -35,4 +39,11 @@ circle.progress {
     transform-origin: center;
     // плавность заполнения
     transition: stroke-dashoffset 0.3s linear;
+}
+
+.progress-circle[data-skill="html"] circle.progress {
+    stroke: coral;
+}
+.progress-circle[data-skill="js"] circle.progress {
+    stroke: var(--stroke-color-green);
 }
