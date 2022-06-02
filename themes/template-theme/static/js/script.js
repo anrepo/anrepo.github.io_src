@@ -1,4 +1,8 @@
-let introduceCarousel;
+// Introduce Components
+
+let introduceCarousel,
+    cirleProgressBar;
+
 
 // // Передача аргументов
 // function multiply(a, b, c) {

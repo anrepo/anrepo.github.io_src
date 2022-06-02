@@ -1,0 +1,38 @@
+.progress-wrap {
+
+}
+
+.progress-circle {
+    position: relative;
+    display: inline-block;
+}
+
+.skill-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 50%;
+}
+
+svg.progress-bar {
+    vertical-align: middle;
+    border: 1px solid black;
+}
+
+circle.progress {
+    // цвет фона и границы; ширина границы
+    fill: transparent;
+    stroke: #00bdbd;
+    stroke-width: 10px;
+    // скругление углов линии границы
+    stroke-linecap: round;
+    // поворот для смещения отсчёта с верхней точки круга
+    transform: rotate(-90deg);
+    // выравнивание круга по центру
+    transform-origin: center;
+    // плавность заполнения
+    transition: stroke-dashoffset 0.3s linear;
+}
