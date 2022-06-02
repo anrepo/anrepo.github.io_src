@@ -1,5 +1,43 @@
 .progress-wrap {
+    margin: 1rem 0;
 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+    & .grid-item {
+        margin: 0.4rem 0;
+    }
+
+    // display: grid;
+    // grid-template-columns: 1fr;
+    // row-gap: 1rem;
+
+    // @media screen and (min-width: 380px) {
+    //     grid-template-columns: 1fr 1fr;
+    // }
+
+    // @media screen and (min-width: 620px) {
+    //     grid-template-columns: 1fr 1fr 1fr;
+    // }
+
+    // @media screen and (min-width: 800px) {
+    //     grid-template-columns: 1fr 1fr 1fr 1fr;
+    // }
+
+    // @media screen and (min-width: 1100px) {
+    //     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    // }
+
+    // @media screen and (min-width: 1180px) {
+    //     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    // }
+}
+
+.progress-wrap .grid-item {
+    display: flex;
+    justify-content: center;
 }
 
 .progress-circle {
@@ -7,8 +45,15 @@
     --stroke-color-blue: #00A1FF;
     --stroke-color-purple: #FF04F7;
     --stroke-color_thrush-eggs: #00DBDB;
+    --fill-color-grey: #6c757d;
     position: relative;
     display: inline-block;
+    @include transit(transform, 0.2s, ease-in-out);
+
+    // &:hover {
+    //     transform: scale(1.1);
+    //     z-index: 1;
+    // }
 }
 
 .skill-circle {
@@ -16,14 +61,27 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--main-color);
     text-align: center;
     border-radius: 50%;
+
+    border: 1px solid var(--fill-color-grey);
+    color: var(--secondary-color);
+    background-color: var(--fill-color-grey);
+    --size: 86%;
+    width: var(--size);
+    height: var(--size);
+    vertical-align: middle;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 
 svg.progress-bar {
     vertical-align: middle;
-    border: 1px solid black;
+    // border: 1px solid black;
 }
 
 circle.progress {
@@ -46,4 +104,13 @@ circle.progress {
 }
 .progress-circle[data-skill="js"] circle.progress {
     stroke: var(--stroke-color-green);
+}
+.progress-circle[data-skill="git"] circle.progress {
+    stroke: var(--stroke-color-purple);
+}
+.progress-circle[data-skill="gulp"] circle.progress {
+    stroke: var(--stroke-color_thrush-eggs);
+}
+.progress-circle[data-skill="leaflet"] circle.progress {
+    stroke: brown;
 }

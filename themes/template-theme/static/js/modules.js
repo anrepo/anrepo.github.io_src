@@ -23,6 +23,9 @@ introduceCarousel.init();
 cirleProgressBar.init();
 
 // Установка значений для кругов прогресса
-cirleProgressBar.circles.html.setProgress(84);
-cirleProgressBar.circles.css.setProgress(71);
+cirleProgressBar.circles.html.setProgress(88);
+cirleProgressBar.circles.css.setProgress(83);
 cirleProgressBar.circles.js.setProgress(76);
+cirleProgressBar.circles.git.setProgress(81);
+cirleProgressBar.circles.gulp.setProgress(71);
+cirleProgressBar.circles.leaflet.setProgress(43);

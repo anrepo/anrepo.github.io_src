@@ -26,6 +26,12 @@ body {
     color: var(--main-color);
 }
 
+p {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    font-size: 1.2rem;
+}
+
 ul {
     display: flex;
     list-style: none;
@@ -55,12 +61,16 @@ ul li a {
     min-height: 100vh;
 }
 
-.flex {
+.d-flex {
     display: flex;
 }
 
 .ai-center {
     align-items: center;
+}
+
+.jc-center {
+    justify-content: center;
 }
 
 .jc-between {
@@ -79,3 +89,4 @@ ul li a {
     background-color: var(--bgc-footer);
     color: var(--secondary-color);
 }
+
