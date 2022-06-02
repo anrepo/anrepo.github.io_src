@@ -94,3 +94,23 @@ section.container {
     // border: 1px solid black;
     // @include br(6px);
 }
+
+
+
+a.underline-animate {
+    text-decoration: none;
+    background-image:   linear-gradient(transparent, transparent),
+                        linear-gradient(currentColor, currentColor),
+                        linear-gradient(#37cdbe, #37cdbe);
+    background-repeat: no-repeat;
+    background-size: 100% 1px, 0 1px, 0 1px;
+    background-position: 0 100%, 100% 100%, 0 100%;
+    transition: background-size 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+a.underline-animate:active,
+a.underline-animate:hover {
+    outline: 0;
+    text-decoration: none;
+    color: #37cdbe;
+    background-size: 0 1px, 0 1px, 100% 1px;
+}
