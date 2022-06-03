@@ -2,11 +2,8 @@ let navMenu = (function() {
 
     function init() {
         const links = document.querySelectorAll('.nav-menu-link');
-        // console.log(links);
 
         for (let item of links) {
-            // console.log(item);
-            
             item.addEventListener('click', () => {
                 clear(links);
                 item.classList.add('nav-menu__active');

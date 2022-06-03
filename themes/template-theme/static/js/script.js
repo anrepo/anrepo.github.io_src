@@ -1,5 +1,4 @@
-// Introduce Components
-
+// Components
 let introduceCarousel,
     cirleProgressBar,
     themeMode,
@@ -7,6 +6,16 @@ let introduceCarousel,
     topButton,
     navLinks;
 
+// Global Variables
+let heightHeader;
+
+document.addEventListener('DOMContentLoaded', function(){
+	heightHeader = document.querySelector('header').clientHeight;
+});
+
+window.addEventListener('resize', function() {
+    heightHeader = document.querySelector('header').clientHeight;
+}, true);
 
 // Добавление для шапки класса прилипания к верхней части экрана при скролле
 // window.onscroll = function sticking(){

@@ -28,7 +28,7 @@ let toTopBtn = (function() {
         }
 
         // Кнопка НЕ должна заползать на Footer
-        let footerElem = document.getElementsByTagName('footer');
+        let footerElem = document.getElementsByClassName('copyright');
         let footerOffsetHeight = footerElem[0].offsetHeight;
         // console.log("footerOffsetHeight: " + footerOffsetHeight);
 
