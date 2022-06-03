@@ -2,7 +2,7 @@ let themeButton = (function() {
 
     function init() {
         const themeButton = document.querySelector('.switch-theme-mode');
-        console.log(themeButton);
+        // console.log(themeButton);
     }
 
     return {

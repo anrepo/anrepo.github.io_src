@@ -3,7 +3,7 @@ header {
 }
 
 #header-logo {
-    color: white;
+    color: var(--secondary-color);
     text-decoration: none;
 }
 
@@ -20,4 +20,11 @@ header {
 
 .header-nav > *:not(:first-child) {
     margin-left: 0.5rem
+}
+
+a.underline-animate.nav-menu__active {
+    outline: 0;
+    text-decoration: none;
+    color: #37cdbe;
+    background-size: 0 1px, 0 1px, 100% 1px;
 }

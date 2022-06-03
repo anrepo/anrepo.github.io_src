@@ -1,0 +1,35 @@
+// Dropdown Button
+.ui-selectmenu-button.ui-button.lang-dropdown-button {
+    width: 5rem;
+    padding: 0.4em 0.6em;
+    background-color: transparent;
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+
+// Dropdown Button Arrow
+.lang-dropdown-button.ui-button .ui-icon {
+    background-image: url(/css/jquery-ui/images/ui-icons_ffffff_256x240.png);
+}
+.lang-dropdown-button.ui-button:hover {
+    color: #777777;
+
+    .ui-icon {
+        background-image: url(/css/jquery-ui/images/ui-icons_777777_256x240.png);
+    }
+}
+.lang-dropdown-button.ui-button:active {
+    border: 1px solid #777777;
+    background: transparent;
+}
+
+
+// Dropdown Menu
+.lang-dropdown-menu .ui-widget-content {
+    background-color: var(--secondary-color);
+}
+
+.lang-dropdown-menu .ui-widget-content .ui-state-active {
+    border: 1px solid #37cdbe;
+    background: #37cdbe;
+}
