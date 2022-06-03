@@ -1,5 +1,5 @@
 header {
-    background-color: #202020;
+    background-color: rgba(32,32,32, 0.8);
 }
 
 #header-logo {
@@ -18,7 +18,7 @@ header {
     cursor: pointer;
 }
 
-.header-nav > *:not(:first-child) {
+.header-nav>*:not(:first-child) {
     margin-left: 0.5rem
 }
 
@@ -27,4 +27,13 @@ a.underline-animate.nav-menu__active {
     text-decoration: none;
     color: #37cdbe;
     background-size: 0 1px, 0 1px, 100% 1px;
+}
+
+header.sticky-menu {
+    position: fixed;
+    top: 0;
+    z-index: 1001;
+
+    width: 100%;
+    background-color: rgba(32,32,32, 0.8);
 }

@@ -2,7 +2,20 @@
 
 let introduceCarousel,
     cirleProgressBar,
-    themeMode;
+    themeMode,
+    anchorLinks,
+    topButton,
+    navLinks;
+
+
+// Добавление для шапки класса прилипания к верхней части экрана при скролле
+// window.onscroll = function sticking(){
+//     if (window.pageYOffset > 0) {
+//         $("header").addClass("sticky-menu");
+//     } else {
+//         $("header").removeClass("sticky-menu");
+//     }
+// }
 
 
 // // Передача аргументов
