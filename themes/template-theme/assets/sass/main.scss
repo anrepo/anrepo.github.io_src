@@ -52,51 +52,6 @@ section.container {
 
 
 
-.slick-wrap {
-    position: relative;
-    margin: 0.7rem 0;
-}
-
-.slick-carousel {
-    width: 90%;
-    margin: 0 auto;
-}
-
-.slick-carousel__arrow-prev,
-.slick-carousel__arrow-next {
-    position: absolute;
-    top: 50%;
-    @include transform(translateY(-50%));
-    @include transit(all, 0.1s, ease-in-out);
-    border-radius: 50%;
-    cursor: pointer;
-    // @include bsh(0, 0, 2px, 1px, rgba(0,0,0,0.7));
-    opacity: 0.6;
-
-    &:hover {
-        @include bsh(0, 0, 6px, 3px, rgba(0, 0, 0, 0.7));
-        opacity: 0.6;
-    }
-}
-
-.slick-carousel__arrow-prev {
-    left: 1%;
-}
-
-.slick-carousel__arrow-next {
-    right: 1%;
-}
-
-.slick-slide {
-    height: 20rem;
-    padding: 0.6rem 2rem 0.6rem;
-    background-color: coral;
-    // border: 1px solid black;
-    // @include br(6px);
-}
-
-
-
 a.underline-animate {
     text-decoration: none;
     background-image:   linear-gradient(transparent, transparent),

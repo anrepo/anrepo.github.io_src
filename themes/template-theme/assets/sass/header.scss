@@ -6,3 +6,18 @@ header {
     color: white;
     text-decoration: none;
 }
+
+.theme-mode {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary-color);
+}
+
+.switch-theme-mode {
+    cursor: pointer;
+}
+
+.header-nav > *:not(:first-child) {
+    margin-left: 0.5rem
+}

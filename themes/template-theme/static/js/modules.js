@@ -1,12 +1,14 @@
 import {headCarousel} from './components/carousel.js';
 import {progressCircle} from './components/circle-progress.js';
+import {themeButton} from './components/theme-mode.js';
 
 
 /**
  * Определение глобальных переменных для внешнего использования
  */
-introduceCarousel = headCarousel;
-cirleProgressBar = progressCircle;
+introduceCarousel   = headCarousel;
+cirleProgressBar    = progressCircle;
+themeMode           = themeButton;
 
 
 // console.log(introduceCarousel);
@@ -29,3 +31,9 @@ cirleProgressBar.circles.js.setProgress(76);
 cirleProgressBar.circles.git.setProgress(81);
 cirleProgressBar.circles.gulp.setProgress(71);
 cirleProgressBar.circles.leaflet.setProgress(43);
+
+
+/**
+ * Инициализация Режима переключения цветовой темы
+ */
+themeMode.init();

@@ -3,10 +3,13 @@
 @import "_mixins";
 // @import "_media-mixin";
 
+
+// Blocks
 @import 'common.scss';
 @import 'header.scss';
 @import 'main.scss';
 @import 'footer.scss';
 
-// Components
+// Elements
 @import 'elements/_skill-progress';
+@import 'elements/_head-carousel';

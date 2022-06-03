@@ -1,7 +1,8 @@
 // Introduce Components
 
 let introduceCarousel,
-    cirleProgressBar;
+    cirleProgressBar,
+    themeMode;
 
 
 // // Передача аргументов
