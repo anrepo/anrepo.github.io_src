@@ -70,3 +70,13 @@ a.underline-animate:hover {
     background-size: 0 1px, 0 1px, 100% 1px;
 }
 
+.link-hover:hover {
+    transition: opacity 0.2s linear;
+    opacity: 0.7;
+}
+
+.social-icons {
+    margin: 0 0.3rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
