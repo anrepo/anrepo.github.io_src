@@ -1,7 +1,7 @@
 let anchorSlider = (function() {
 
     function init() {
-        // Функционал для перехлда по якорным ссылкам
+        // Функционал для перехода по якорным ссылкам
         let singleTitlesItem = document.querySelectorAll(".goToAnchor");
 
         singleTitlesItem.forEach(function(item) {

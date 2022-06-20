@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post</title>
+
+	<!-- "Meta Data" -->
+    {{ partial "pages/blog/meta.html" }}
+
+	<!-- "Styles" -->
+    {{ partial "pages/blog/styles.html"}}
+</head>
+
+<body>
+	<div class="vh-100 pt-4rem d-flex flex__column">
+
+		{{ partial "pages/blog/header.html" }}
+
+		<main class="h-100 fg-1">
+
+			<div class="post container">
+
+				<h1>{{ .Title }}</h1>
+	
+				{{ .Content }}
+
+			</div>
+
+
+			<!-- To top button -->
+			{{ partial "components/toTopBtn" }}
+		</main>
+
+		{{ partial "blocks/footer" }}
+  	{{ partial "blocks/copyright" }}
+	</div>
+
+
+	<!-- "Scripts" -->
+	{{ partial "pages/blog/scripts.html"}}
+	<!-- end: "Scripts" -->
+
+</body>
+
+</html>

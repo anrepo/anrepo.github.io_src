@@ -1,0 +1,13 @@
+<!-- CSS.gg -->
+<link rel="stylesheet" href="{{ .Permalink }}/css/cssgg/all.css">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="{{ .Permalink }}/css/font-awesome/css/all.min.css">
+
+<!-- jQuery UI Styles -->
+<link rel="stylesheet" href="{{ .Permalink }}/css/jquery-ui/jquery-ui.min.css">
+
+<!-- Styles -->
+<!-- <link rel="stylesheet" href="{{.Permalink}}/css/style.css"> -->
+{{ $sass := resources.Get "sass/root.scss" | resources.ToCSS (dict "targetPath" "css/style.css") }}
+<link rel="stylesheet" href="{{ $sass.Permalink }}">

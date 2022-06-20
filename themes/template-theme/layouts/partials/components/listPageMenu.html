@@ -1,0 +1,14 @@
+<ul class="posts__list">
+    {{ range .Pages }}
+    <li class="posts__item">
+        <!-- Если на странице стоит параметр "pageNumberingInListByWeight" со значением "true",
+        то в боковую панель ListPage будет добавлена нумерация перед заголовком
+        равная значению weight страницы. -->
+        {{ if .Param "pageNumberingInListByWeight" }}
+            <a class="posts__item-link" href="{{ .Permalink }}">{{ .Weight }}. {{ .Title }}</a>
+        {{ else }}
+            <a class="posts__item-link" href="{{ .Permalink }}">{{ .Title }}</a>
+        {{ end }}
+    </li>
+    {{ end }}
+</ul>

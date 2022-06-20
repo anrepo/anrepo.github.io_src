@@ -7,6 +7,8 @@ $( ".dropdown-lang" ).selectmenu({
     }
 });
 
-function changeLang() {
-    console.log('Change Language');
+function changeLang(event, ui) {
+    console.log(`Change lang on: ${ui.item.value}`);
+    // console.log(event);
+    // console.log(ui);
 }

@@ -1,0 +1,31 @@
+
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- jQuery UI -->
+<script src="/js/libs/jquery-ui/jquery-ui.min.js"></script>
+
+<!-- jQuery UI SelecMenu init-->
+<script src="/js/components/select-menu.js"></script>
+
+
+<!-- Include Modules -->
+<script type="module">
+    import {themeButton} from '/js/components/theme-mode.js';
+    import {anchorSlider} from '/js/components/goto-anchor.js';
+    import {toTopBtn} from '/js/components/goto-top-button.js';
+    import {navMenu} from '/js/components/header-nav-menu.js';
+
+    themeMode   = themeButton,
+    anchorLinks = anchorSlider,
+    topButton   = toTopBtn,
+    navLinks    = navMenu;
+</script>
+
+<!-- Global Vars. -->
+<script>
+    let themeMode,
+        anchorLinks,
+        topButton,
+        navLinks;
+</script>

@@ -27,6 +27,11 @@ body {
 }
 
 
+h1 {
+    margin: 1.2rem 0;
+}
+
+
 p {
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -75,8 +80,16 @@ ul li a {
 
 .fsz-32 { font-size: 32px }
 
+.pt-4rem {
+    padding-top: 4rem;
+}
+
 .d-flex {
     display: flex;
+}
+
+.fg-1 {
+    flex-grow: 1;
 }
 
 .ai-center {

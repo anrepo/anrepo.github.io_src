@@ -80,3 +80,14 @@ a.underline-animate:hover {
     font-size: 2rem;
     cursor: pointer;
 }
+
+.header-logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.post {
+    ol, ul {
+        margin-left: 1rem;
+    }
+}
