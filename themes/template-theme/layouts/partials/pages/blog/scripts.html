@@ -20,6 +20,30 @@
     anchorLinks = anchorSlider,
     topButton   = toTopBtn,
     navLinks    = navMenu;
+
+
+    /**
+     * Инициализация Режима переключения цветовой темы
+     */
+    themeMode.init();
+
+    /**
+     * Инициализация плавной прокрутки по якорным ссылкам
+     */
+    anchorLinks.init();
+
+
+    /**
+     * Инициализация кнопки "Наверх"
+     */
+    topButton.init();
+
+
+    /**
+     * Инициализация навигационных ссылок
+     */
+    navLinks.init();
+    
 </script>
 
 <!-- Global Vars. -->
@@ -28,4 +52,19 @@
         anchorLinks,
         topButton,
         navLinks;
+
+    function saveLS() {
+        localStorage.setItem('navMenu', navLinks);
+    }
+
+    function viewLS() {
+        let obj = localStorage.getItem('navMenu');
+        console.log(obj);
+    }
+
+    function startLs() {
+        saveLS();
+        viewLS();
+    }
+
 </script>

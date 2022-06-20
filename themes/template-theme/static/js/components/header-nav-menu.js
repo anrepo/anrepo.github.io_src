@@ -1,7 +1,11 @@
 let navMenu = (function() {
 
+    const urlPath = location.pathname;
+
     function init() {
         const links = document.querySelectorAll('.nav-menu-link');
+
+        console.log(urlPath);
 
         for (let item of links) {
             item.addEventListener('click', () => {
