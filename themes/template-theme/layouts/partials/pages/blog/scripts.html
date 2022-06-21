@@ -15,11 +15,13 @@
     import {anchorSlider} from '/js/components/goto-anchor.js';
     import {toTopBtn} from '/js/components/goto-top-button.js';
     import {navMenu} from '/js/components/header-nav-menu.js';
+    import {readingProcess} from '/js/components/reading-process.js';
 
     themeMode   = themeButton,
     anchorLinks = anchorSlider,
     topButton   = toTopBtn,
-    navLinks    = navMenu;
+    navLinks    = navMenu
+    readingBar  = readingProcess;
 
 
     /**
@@ -51,7 +53,8 @@
     let themeMode,
         anchorLinks,
         topButton,
-        navLinks;
+        navLinks,
+        readingBar;
 
     function saveLS() {
         localStorage.setItem('navMenu', navLinks);
@@ -65,6 +68,11 @@
     function startLs() {
         saveLS();
         viewLS();
+    }
+
+    document.onscroll = function(){
+        // Устанавливает полосу прогресса чтения страницы
+        readingBar.setReadingProcess(readingBar.getVerticalScrollPercentage());
     }
 
 </script>

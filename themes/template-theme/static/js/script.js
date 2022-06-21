@@ -4,7 +4,8 @@ let introduceCarousel,
     themeMode,
     anchorLinks,
     topButton,
-    navLinks;
+    navLinks,
+    readingBar;
 
 // Global Variables
 let heightHeader;
@@ -16,6 +17,13 @@ document.addEventListener('DOMContentLoaded', function(){
 window.addEventListener('resize', function() {
     heightHeader = document.querySelector('header').clientHeight;
 }, true);
+
+
+document.onscroll = function(){
+    // Устанавливает полосу прогресса чтения страницы
+    readingBar.setReadingProcess(readingBar.getVerticalScrollPercentage());
+}
+
 
 // Добавление для шапки класса прилипания к верхней части экрана при скролле
 // window.onscroll = function sticking(){

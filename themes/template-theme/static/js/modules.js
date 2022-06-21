@@ -4,6 +4,7 @@ import {themeButton} from './components/theme-mode.js';
 import {anchorSlider} from './components/goto-anchor.js';
 import {toTopBtn} from './components/goto-top-button.js';
 import {navMenu} from './components/header-nav-menu.js';
+import {readingProcess} from './components/reading-process.js';
 
 
 /**
@@ -15,6 +16,7 @@ themeMode           = themeButton;
 anchorLinks         = anchorSlider;
 topButton           = toTopBtn;
 navLinks            = navMenu;
+readingBar          = readingProcess;
 
 
 // console.log(introduceCarousel);
@@ -62,5 +64,4 @@ topButton.init();
  * Инициализация навигационных ссылок
  */
 navLinks.init();
-
 
