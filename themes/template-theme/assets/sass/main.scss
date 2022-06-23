@@ -15,7 +15,13 @@
 }
 
 .copyright {
+    display: flex;
+    align-items: center;
     background-color: var(--bgc-copyright);
+
+    .apol-logo {
+        padding-right: 0.5rem;
+    }
 }
 
 ul.nav-bar {
@@ -90,4 +96,14 @@ a.underline-animate:hover {
     ol, ul {
         margin-left: 1rem;
     }
+}
+
+
+.apol-logo {
+    height: 2.4em;
+}
+
+.hugo-logo {
+    // height: 1.1rem;
+    height: auto;
 }

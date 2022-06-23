@@ -52,6 +52,10 @@ ul li a {
     text-decoration: none;
 }
 
+img {
+    vertical-align: middle;
+}
+
 
 
 .hidden {
@@ -61,6 +65,16 @@ ul li a {
 
 .underline {
     text-decoration: underline;
+}
+
+.unselectable {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently
+                                    not supported by any browser */
 }
 
 
@@ -121,4 +135,3 @@ ul li a {
     background-color: var(--bgc-footer);
     color: var(--secondary-color);
 }
-
