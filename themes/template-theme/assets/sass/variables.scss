@@ -18,26 +18,27 @@ html[data-theme="light"] {
     --bgc-body: #f9f9f9;
     --color: #202020;
     --bgc-section: #e5e9f2;
+    --bgc-copyright: #cee6f2;
+    --bgc-footer: #999999;
+
 
     --main-color: #202020;
     --secondary-color: #EBFFFA;
     --font-color: #0594cb;
     --font-color-hover: #96ccff;
-    --bgc-footer: #999999;
-    --bgc-copyright: #cee6f2;
     --accent-color: #37cdbe;
 }
 
 html[data-theme="dark"] {
-    --bgc-body: #202020;
+    --bgc-body: #333333;
     --color: #EBFFFA;
-    --bgc-section: #333333;
+    --bgc-section: #202020;
+    --bgc-footer: #162434;
+    --bgc-copyright: #0594cb;
 
     --main-color: #202020;
     --secondary-color: #EBFFFA;
     --font-color: #0594cb;
     --font-color-hover: #96ccff;
-    --bgc-footer: #999999;
-    --bgc-copyright: #cee6f2;
     --accent-color: #37cdbe;
 }

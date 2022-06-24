@@ -120,6 +120,6 @@ a.underline-animate:hover {
     color: var(--color);
 }
 
-main section:nth-child(3n+1) {
+main section:nth-child(2n) {
     background-color: var(--bgc-section);
 }
