@@ -7,7 +7,7 @@ let themeButton = (function() {
         // console.log(themeButton);
 
         themeMode = localStorage.getItem('themeMode');
-        console.log(themeMode);
+        // console.log(themeMode);
 
         if (themeMode) document.documentElement.setAttribute("data-theme", themeMode);
         else document.documentElement.setAttribute("data-theme", "light");
