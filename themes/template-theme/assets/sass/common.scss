@@ -20,7 +20,7 @@ body {
     // overflow-x: hidden;
     // margin-right: calc(-1 * (100vw - 100%));
 
-    background: #f9f9f9;
+    background: var(--bgc-body);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 1rem;
     color: var(--main-color);
@@ -28,20 +28,28 @@ body {
 
 
 h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin: 1.2rem 0;
 }
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
+}
+
+h3 {
+    margin: 1.2rem 0 0.5rem;
+    font-size: 1.4rem;
 }
 
 
 p {
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    font-size: 1.2rem;
-    font-size: 1rem;
+    margin-block-start: 0.3em;
+    margin-block-end: 0.3em;
+    font-size: 1.2em;
+}
+
+a {
+    font-size: 1.2em;
 }
 
 ul {

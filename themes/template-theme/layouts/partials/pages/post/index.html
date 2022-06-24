@@ -19,24 +19,21 @@
 
 		{{ partial "pages/blog/header.html" }}
 
-		<main class="h-100 fg-1">
-
-			<div class="post container">
+		<main class="h-100 fg-1 switch-color">
+			<section class="post container">
 
 				<h1>{{ .Title }}</h1>
 	
 				{{ .Content }}
 
-			</div>
-
-
-			<!-- To top button -->
-			{{ partial "components/toTopBtn" }}
+			</section>
 		</main>
-
+		
 		{{ partial "blocks/footer" }}
 	</div>
-
+	
+	<!-- To top button -->
+	{{ partial "components/toTopBtn" }}
 
 	<!-- "Scripts" -->
 	{{ partial "pages/blog/scripts.html"}}

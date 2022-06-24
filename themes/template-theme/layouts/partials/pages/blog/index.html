@@ -19,9 +19,8 @@
 
 		{{ partial "pages/blog/header.html" }}
 
-		<main class="h-100 fg-1">
-
-			<div class="blog-list container">
+		<main class="h-100 fg-1 switch-color">
+			<section class="blog-list container">
 
 				<h1>{{ .Title }}</h1>
 	
@@ -40,16 +39,14 @@
 					{{ end }}
 				</ul>
 
-			</div>
-
-
-			<!-- To top button -->
-			{{ partial "components/toTopBtn" }}
+			</section>
 		</main>
-
+		
 		{{ partial "blocks/footer" }}
 	</div>
-
+	
+	<!-- To top button -->
+	{{ partial "components/toTopBtn" }}
 
 	<!-- "Scripts" -->
 	{{ partial "pages/blog/scripts.html"}}

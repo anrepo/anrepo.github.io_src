@@ -15,6 +15,24 @@ $header-height: 50px;
 // }
 
 html[data-theme="light"] {
+    --bgc-body: #f9f9f9;
+    --color: #202020;
+    --bgc-section: #e5e9f2;
+
+    --main-color: #202020;
+    --secondary-color: #EBFFFA;
+    --font-color: #0594cb;
+    --font-color-hover: #96ccff;
+    --bgc-footer: #999999;
+    --bgc-copyright: #cee6f2;
+    --accent-color: #37cdbe;
+}
+
+html[data-theme="dark"] {
+    --bgc-body: #202020;
+    --color: #EBFFFA;
+    --bgc-section: #333333;
+
     --main-color: #202020;
     --secondary-color: #EBFFFA;
     --font-color: #0594cb;

@@ -107,3 +107,19 @@ a.underline-animate:hover {
     // height: 1.1rem;
     height: auto;
 }
+
+.project-box {
+    margin-bottom: 2rem;
+}
+
+.project-box a.project-link {
+    font-size: 1em;
+}
+
+.switch-color {
+    color: var(--color);
+}
+
+main section:nth-child(3n+1) {
+    background-color: var(--bgc-section);
+}

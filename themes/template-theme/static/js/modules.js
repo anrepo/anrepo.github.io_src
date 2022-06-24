@@ -19,6 +19,14 @@ navLinks            = navMenu;
 readingBar          = readingProcess;
 
 
+
+/**
+ * Инициализация Режима переключения цветовой темы
+ */
+themeMode.init();
+
+
+
 // console.log(introduceCarousel);
 
 
@@ -41,11 +49,6 @@ cirleProgressBar.circles.git.setProgress(81);
 cirleProgressBar.circles.gulp.setProgress(71);
 cirleProgressBar.circles.leaflet.setProgress(43);
 
-
-/**
- * Инициализация Режима переключения цветовой темы
- */
-themeMode.init();
 
 
 /**
