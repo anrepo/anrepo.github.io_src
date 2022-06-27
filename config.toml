@@ -1,5 +1,7 @@
 baseURL = "http://anrepo.github.io/"
 languageCode = "ru"
+# Выбор Языка по умолчанию
+defaultContentLanguage = "ru"
 title = "Profile Project"
 theme = "template-theme"
 # theme = "bootstrap-theme"
@@ -7,6 +9,7 @@ theme = "template-theme"
 # false - добавит запись с версией Hugo первой строкой в тег <head>
 # например, такую: '<meta name="generator" content="Hugo 0.67.1" />'
 disableHugoGeneratorInject = true
+
 
 [markup]
     # Goldmark - это библиотека Hugo для использования языка разметки "Markdown"
@@ -17,15 +20,34 @@ disableHugoGeneratorInject = true
             unsafe = true
 
 
-# defaultContentLanguage = 'ru-RU'
-# [languages]
-#     [languages.ru]
-#         languageName = 'RU'
-#         contentDir = 'content/ru'
-#         title = 'Блог'
-#         weight = 1
-#     [languages.en]
-#         languageName = 'EN'
-#         contentDir = 'content/en'
-#         title = 'My blog'
-#         weight = 2
+copyright = 'Everything is mine'
+defaultContentLanguageInSubdir = "true"
+# Отключение неиспользуемых языков (полезно при работе над переводом)
+disableLanguages = ["ar", "fr"]
+[languages]
+    [languages.ru]
+        languageName = 'Russian'
+        contentDir = 'content/ru'
+        title = 'Блог'
+        weight = 1
+    [languages.en]
+        languageName = 'English'
+        contentDir = 'content/en'
+        title = 'My blog'
+        weight = 2
+    # Арабский введен для демонстрации использования
+    # правостороннего написания языка
+    [languages.ar]
+        languagedirection = 'rtl'
+        languageName = 'ar'
+        contentDir = 'content/ar'
+        title = 'مقالات'
+        weight = 3
+    [languages.fr]
+        languageName = 'fr'
+        contentDir = 'content/fr'
+        title = 'My blog'
+        weight = 4
+    [params]
+        [params.navigation]
+            help = 'Help'

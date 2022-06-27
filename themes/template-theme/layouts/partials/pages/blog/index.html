@@ -22,7 +22,7 @@
 		<main class="h-100 fg-1 switch-color">
 			<section class="blog-list container">
 
-				<h1>Posts</h1>
+				<h1>{{ .Title }}</h1>
 	
 				<ul class="posts__list">
 					{{ range .Pages }}
@@ -38,6 +38,14 @@
 					</li>
 					{{ end }}
 				</ul>
+
+				<br><hr>
+
+				<h3>Язык: Заголовок страницы</h3>
+				{{ partial "multilang/i18nlist.html" . }}
+
+				<h3>Список всех языков</h3>
+				{{ partial "multilang/allLanguages.html" . }}
 
 			</section>
 		</main>
