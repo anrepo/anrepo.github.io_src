@@ -3,13 +3,12 @@
         <a id="header-logo" class="header-logo" href="./">APOL</a>
         <div class="header-nav d-flex">
             <ul class="nav-bar ai-center">
-                <li><a class="underline-animate nav-menu-link goToAnchor nav-menu__active" href="#head-carousel">Home</a></li>
-                <li><a class="underline-animate nav-menu-link goToAnchor" href="#about">About</a></li>
-                <li><a class="underline-animate nav-menu-link goToAnchor" href="#skills">Skills</a></li>
-                <li><a class="underline-animate nav-menu-link goToAnchor" href="#experience">Experience</a></li>
-                <li><a class="underline-animate nav-menu-link goToAnchor" href="#projects">Projects</a></li>
-                <li><a class="underline-animate nav-menu-link" href="/blog">Blog</a></li>
-                <li><a class="underline-animate nav-menu-link goToAnchor" href="#footer">Contacts</a></li>
+                <li><a class="underline-animate nav-menu-link goToAnchor nav-menu__active" href="{{ .Premalink }}#head-carousel">Home</a></li>
+                <li><a class="underline-animate nav-menu-link goToAnchor" href="{{ .Premalink }}#about">About</a></li>
+                <li><a class="underline-animate nav-menu-link goToAnchor" href="{{ .Premalink }}#skills">Skills</a></li>
+                <li><a class="underline-animate nav-menu-link goToAnchor" href="{{ .Premalink }}#projects">Projects</a></li>
+                <li><a class="underline-animate nav-menu-link" href="{{ .Premalink }}blog">Blog</a></li>
+                <li><a class="underline-animate nav-menu-link goToAnchor" href="{{ .Premalink }}#footer">Contacts</a></li>
             </ul>
             {{ partial "components/dropdown-lang.html" }}
             {{ partial "components/dark-light-button.html" }}

@@ -1,6 +1,7 @@
 .head-carousel {
     position: relative;
-    padding-top: 4rem;
+    // height: 100vh;
+    // padding-top: 4rem;
     
     background-image: url('/img/background/romb.jpg');
     background-position: center;
@@ -20,6 +21,8 @@
 .slick-wrap {
     position: relative;
     z-index: 2;
+    // height: 100vh;
+    padding-top: 4rem;
     color: var(--secondary-color);
 }
 
@@ -55,7 +58,8 @@
 .slick-slide {
     height: 40rem;
     max-height: 80vh;
-    padding: 3rem 2.5rem 2rem;
+    // padding: 3rem 2.5rem 2rem;
+    padding: 0 2.5rem 2rem;
 
     @media screen and (min-width: 400px) {
         height: 35rem;

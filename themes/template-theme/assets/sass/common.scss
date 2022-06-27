@@ -117,37 +117,21 @@ img {
 
 .fsz-32 { font-size: 32px }
 
-.pt-4rem {
-    padding-top: 4rem;
-}
+.pt-4rem { padding-top: 4rem }
+.mb-2rem { margin-bottom: 2rem }
 
-.d-flex {
-    display: flex;
-}
+.d-flex { display: flex }
+.d-grid { display: grid }
 
-.fg-1 {
-    flex-grow: 1;
-}
+.fg-1 { flex-grow: 1 }
 
-.ai-center {
-    align-items: center;
-}
+.ai-center { align-items: center }
+.jc-center { justify-content: center }
+.jc-between { justify-content: space-between }
 
-.jc-center {
-    justify-content: center;
-}
+.flex__column { flex-direction: column }
 
-.jc-between {
-    justify-content: space-between;
-}
-
-.flex__column {
-    flex-direction: column;
-}
-
-.bgc__coral {
-    background-color: coral;
-}
+.bgc__coral { background-color: coral }
 
 .bgc__grey {
     background-color: var(--bgc-footer);
