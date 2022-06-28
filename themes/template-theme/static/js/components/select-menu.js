@@ -12,5 +12,18 @@ function changeLang(event, ui) {
     // console.log(event);
     // console.log(ui);
 
-    location.href = ui.item.label.toLowerCase();
+    const newLang = ui.item.label.toLowerCase();
+
+    const path = location.pathname;
+    console.log(path);
+    
+    const partsPath = path.split('/');
+    console.log(partsPath);
+
+    // if (partsPath[1] == newLang) {
+
+    // }
+
+
+    // location.href = ui.item.label.toLowerCase();
 }

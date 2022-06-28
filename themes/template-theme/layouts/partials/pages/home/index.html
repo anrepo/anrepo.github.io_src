@@ -6,8 +6,8 @@
 <body>
     <div class="vh-100 d-flex flex__column">
         {{ partial "pages/home/header.html" }}
-        {{ partial "pages/home/main.html" }}
-        {{ partial "blocks/footer.html" }}
+        {{ partial "pages/home/main.html" . }}
+        {{ partial "blocks/footer.html" . }}
     </div>
 
     <!-- Scripts -->

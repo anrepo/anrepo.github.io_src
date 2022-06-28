@@ -1,29 +1,21 @@
 baseURL = "http://anrepo.github.io/"
 languageCode = "ru"
-# Выбор Языка по умолчанию
-defaultContentLanguage = "ru"
 title = "Profile Project"
 theme = "template-theme"
 # theme = "bootstrap-theme"
+
 
 # false - добавит запись с версией Hugo первой строкой в тег <head>
 # например, такую: '<meta name="generator" content="Hugo 0.67.1" />'
 disableHugoGeneratorInject = true
 
 
-[markup]
-    # Goldmark - это библиотека Hugo для использования языка разметки "Markdown"
-    [markup.goldmark]
-        [markup.goldmark.renderer]
-            # unsafe - со значением "true" позвоняет использовать html и javascript в файлах с расширением *.md (Markdown)
-            # по умолчанию unsafe = false
-            unsafe = true
-
-
-copyright = 'Everything is mine'
-defaultContentLanguageInSubdir = "true"
+# Выбор Языка по умолчанию
+defaultContentLanguage = "ru"
+defaultContentLanguageInSubdir = "false"
 # Отключение неиспользуемых языков (полезно при работе над переводом)
 disableLanguages = ["ar", "fr"]
+copyright = 'Everything is mine'
 [languages]
     [languages.ru]
         languageName = 'Russian'
@@ -33,7 +25,7 @@ disableLanguages = ["ar", "fr"]
     [languages.en]
         languageName = 'English'
         contentDir = 'content/en'
-        title = 'My blog'
+        title = 'My Blog'
         weight = 2
     # Арабский введен для демонстрации использования
     # правостороннего написания языка
@@ -51,3 +43,12 @@ disableLanguages = ["ar", "fr"]
     [params]
         [params.navigation]
             help = 'Help'
+
+
+[markup]
+    # Goldmark - это библиотека Hugo для использования языка разметки "Markdown"
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+            # unsafe - со значением "true" позвоняет использовать html и javascript в файлах с расширением *.md (Markdown)
+            # по умолчанию unsafe = false
+            unsafe = true
