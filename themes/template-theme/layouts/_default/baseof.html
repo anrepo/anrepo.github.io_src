@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+    
+        <!-- "Meta Data" -->
+        {{ block "meta" . }}
+            <!-- Различающаяся часть страницы -->
+
+        {{ end }}
+    
+        <!-- "Styles" -->
+        {{ block "styles" . }}
+            <!-- Стили могут отличаться на разных страницах -->
+
+        {{ end }}
+    </head>
+    <body>
+        {{ block "body" .}}
+            <!-- Основная часть страницы -->
+            
+        {{ end }}
+    </body>
+</html>
