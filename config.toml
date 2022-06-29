@@ -14,7 +14,7 @@ disableHugoGeneratorInject = true
 defaultContentLanguage = "ru"
 defaultContentLanguageInSubdir = "false"
 # Отключение неиспользуемых языков (полезно при работе над переводом)
-disableLanguages = ["ar", "fr"]
+disableLanguages = ["en", "ar", "fr"]
 copyright = 'Everything is mine'
 [languages]
     [languages.ru]
@@ -43,6 +43,43 @@ copyright = 'Everything is mine'
     [params]
         [params.navigation]
             help = 'Help'
+
+
+# Для страниц Home, Blog и Contact меню обозначены
+# в заголовках фалов контента
+# Здесь заданы только яконрые ссылки
+[menu]
+    # [[menu.header]]
+    #     identifier = 'home'
+    #     name = 'Home'
+    #     url = '/'
+    #     weight = 1
+    [[menu.header]]
+        identifier = 'about'
+        name = 'Обо мне'
+        url = '/#about'
+        weight = 2
+    [[menu.header]]
+        identifier = 'projects'
+        name = 'Проекты'
+        url = '/#projects'
+        weight = 2
+    [[menu.header]]
+        identifier = 'skills'
+        name = 'Навыки'
+        url = '/#skills'
+        weight = 2
+    # [[menu.header]]
+    #     dentifier = "blog"
+    #     name = "Blog"
+    #     url = "/blog/"
+    #     weight = 5
+    # [[menu.header]]
+    #     dentifier = "contact"
+    #     name = "Contact"
+    #     url = "/contact/"
+    #     weight = 6
+
 
 
 [markup]

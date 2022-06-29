@@ -1,9 +1,9 @@
 {{ define "meta" }}
-    {{ partial "pages/home/meta.html" }}
+    {{ partial "pages/home/meta.html" . }}
 {{ end }}
 
 {{ define "styles" }}
-    {{ partial "pages/home/styles.html"}}
+    {{ partial "pages/home/styles.html" . }}
 {{ end }}
 
 {{ define "body" }}
@@ -12,6 +12,6 @@
         {{ partial "pages/home/main.html" . }}
         {{ partial "blocks/footer.html" . }}
     </div>
-    <!-- Scripts -->
+    
     {{ partial "pages/home/scripts-bottom.html" }}
 {{end}}

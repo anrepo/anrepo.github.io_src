@@ -1,2 +1,23 @@
 [posts]
     other = 'Статьи'
+
+[home]
+    other = 'Главная'
+
+[about]
+    other = 'Обо мне'
+
+[skills]
+    other = 'Навыки'
+
+[projects]
+    other = 'Проекты'
+
+[blog]
+    other = 'Блог'
+
+[contacts]
+    other = 'Контакты'
+
+[feedback]
+    other = 'Обратная связь'
