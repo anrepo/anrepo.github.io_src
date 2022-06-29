@@ -12,11 +12,14 @@ menu:
 <div class="list">
     <form class="feedback-form" action="">
         <label for="">
-            <input type="text" name="" id="">
+            <input id="name" type="text" name="" id="" placeholder="Ваше имя" value="" required>
         </label>
         <label for="">
-            <input type="email" name="Email" id="">
+            <input id="email" type="email" name="Email" id="" placeholder="example@test.ru" required value="">
         </label>
-        <textarea name="Message" id="" cols="30" rows="10" placeholder="Напишите мне что-нибудь хорошее..."></textarea>
+        <textarea id="body" name="Message" placeholder="Напишите мне что-нибудь хорошее..." autocorrect="on"></textarea>
+        <input class="btn form-submit" type="button" value="Отправить">
     </form>
 </div>
+
+<script src="/js/components/feedback-form.js"></script>
