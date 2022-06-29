@@ -15,7 +15,7 @@ menu:
             <input id="name" type="text" name="" id="" placeholder="Ваше имя" value="" required>
         </label>
         <label for="">
-            <input id="email" type="email" name="Email" id="" placeholder="example@test.ru" required value="">
+            <input id="email" type="email" name="Email" id="" placeholder="Email" required value="">
         </label>
         <textarea id="body" name="Message" placeholder="Напишите мне что-нибудь хорошее..." autocorrect="on"></textarea>
         <input class="btn form-submit" type="button" value="Отправить">
