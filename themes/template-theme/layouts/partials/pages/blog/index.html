@@ -17,7 +17,7 @@
 <body>
 	<div class="vh-100 pt-4rem d-flex flex__column">
 
-		{{ partial "pages/blog/header.html" }}
+		{{ partial "pages/blog/header.html" . }}
 
 		<main class="h-100 fg-1 switch-color">
 			<section class="blog-list container">
@@ -50,7 +50,7 @@
 			</section>
 		</main>
 		
-		{{ partial "blocks/footer" }}
+		{{ partial "blocks/footer" . }}
 	</div>
 	
 	<!-- To top button -->

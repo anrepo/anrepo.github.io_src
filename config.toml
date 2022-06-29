@@ -54,21 +54,34 @@ copyright = 'Everything is mine'
     #     name = 'Home'
     #     url = '/'
     #     weight = 1
+
     [[menu.header]]
         identifier = 'about'
         name = 'Обо мне'
-        url = '/#about'
+        url = '#about'
         weight = 2
+        [menu.header.params]
+            onlyHome = true
+            subUrl = '#about'
     [[menu.header]]
         identifier = 'projects'
         name = 'Проекты'
-        url = '/#projects'
-        weight = 2
+        url = '#projects'
+        weight = 3
+        onlyHome = true
+        [menu.header.params]
+            onlyHome = true
+            subUrl = '#projects'
     [[menu.header]]
         identifier = 'skills'
         name = 'Навыки'
-        url = '/#skills'
-        weight = 2
+        url = '#skills'
+        weight = 4
+        onlyHome = true
+        [menu.header.params]
+            onlyHome = true
+            subUrl = '#skills'
+
     # [[menu.header]]
     #     dentifier = "blog"
     #     name = "Blog"

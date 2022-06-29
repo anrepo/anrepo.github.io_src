@@ -2,18 +2,10 @@
     <div class="container d-flex jc-between">
         <a id="header-logo" class="header-logo" href="/">APOL</a>
         <div class="header-nav d-flex">
-            <!-- <ul class="nav-bar ai-center">
-                <li><a class="underline-animate nav-menu-link goToAnchor nav-menu__active" href="{{ .Premalink }}#head-carousel">{{ i18n "home" }}</a></li>
-                <li><a class="underline-animate nav-menu-link goToAnchor" href="{{ .Premalink }}#about">{{ i18n "about" }}</a></li>
-                <li><a class="underline-animate nav-menu-link goToAnchor" href="{{ .Premalink }}#skills">{{ i18n "skills" }}</a></li>
-                <li><a class="underline-animate nav-menu-link goToAnchor" href="{{ .Premalink }}#projects">{{ i18n "projects" }}</a></li>
-                <li><a class="underline-animate nav-menu-link" href="{{ .Premalink }}blog">{{ i18n "blog" }}</a></li>
-                <li><a class="underline-animate nav-menu-link" href="{{ .Premalink }}contact/">{{ i18n "contacts" }}</a></li>
-            </ul> -->
-            {{ partial "navigations/header-nav" . }}
-            {{ partial "components/dropdown-lang.html" . }}
-            {{ partial "components/dark-light-button.html" . }}
+            {{ partial "navigations/home-header-nav" . }}
+            {{ partial "components/dropdown-lang.html" }}
+            {{ partial "components/dark-light-button.html" }}
         </div>
     </div>
-    {{ partial "components/reading-progress.html" . }}
+    {{ partial "components/reading-progress.html" }}
 </header>

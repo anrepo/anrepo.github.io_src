@@ -1,0 +1,9 @@
+<ul class="nav-bar ai-center">
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.header }}
+        <li><a class="underline-animate nav-menu-link {{ if .Params.onlyHome }}goToAnchor{{ end }} {{if or ($currentPage.IsMenuCurrent "header" .) ($currentPage.HasMenuCurrent "header" .) }}nav-menu__active{{end}}" 
+            href="{{ .URL | absLangURL }}"
+            sub-href="{{ .Params.subUrl }}" 
+            title="{{ .Title }}">{{ .Name }}</a></li>
+    {{ end }}
+</ul>

@@ -7,11 +7,11 @@ let anchorSlider = (function() {
         singleTitlesItem.forEach(function(item) {
             // Если у элемента списка задан атрибут href 
             // href генерируется средствами Hugo на странице "single.html"
-            if (typeof item.hasAttribute('href') !== 'undefined' && item.hasAttribute('href') !== false) {
+            if (typeof item.hasAttribute('sub-href') !== 'undefined' && item.hasAttribute('sub-href') !== false) {
                 
                 item.addEventListener('click', function(e) {
                     e.preventDefault();
-                    let hrefLink = $(this).attr('href').substring(1);
+                    let hrefLink = $(this).attr('sub-href').substring(1);
                     let offestY = $('#' + hrefLink).offset();
                     
                     // скроллинг с плавной анимацией
@@ -28,4 +28,3 @@ let anchorSlider = (function() {
 })();
 
 export {anchorSlider}
-

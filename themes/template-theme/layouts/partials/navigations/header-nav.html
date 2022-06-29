@@ -4,10 +4,33 @@
     {{ end }}
 </ul> -->
 
-<ul class="nav-bar ai-center">
+<!-- <ul class="nav-bar ai-center">
     {{ $currentPage := . }}
     {{ range .Site.Menus.header }}
-    <li><a class="underline-animate nav-menu-link {{if or ($currentPage.IsMenuCurrent "header" .) ($currentPage.HasMenuCurrent "header" .) }}nav-menu__active{{end}}" href="{{ .URL | absLangURL }}" title="{{ .Title }}">{{ .Name }}</a></li>
+    <li><a class="underline-animate nav-menu-link {{if or ($currentPage.IsMenuCurrent "header" .) ($currentPage.HasMenuCurrent "header" .) }}nav-menu__active{{end}}" 
+        href="{{ .URL | absLangURL }}" 
+        title="{{ .Title }}">{{ .Name }}</a></li>
+    {{ end }}
+</ul> -->
+
+<!-- Добавлена проверка "Является ли страницы Главной" -->
+<ul class="nav-bar ai-center">
+    {{ $currentPage := . }}
+
+    <!-- {{ $isHome := false }}
+    {{ if $currentPage.IsHome }}
+        {{ $isHome = true }}
+    {{ end }}
+    {{ $isHome }} -->
+    
+    {{ range .Site.Menus.header }}
+    
+        {{ if and (not $currentPage.IsHome) (not .Params.onlyHome) }}
+            <li><a class="underline-animate nav-menu-link {{if or ($currentPage.IsMenuCurrent "header" .) ($currentPage.HasMenuCurrent "header" .) }}nav-menu__active{{end}}" 
+                href="{{ .URL | absLangURL }}" 
+            title="{{ .Title }}">{{ .Name }}</a></li>
+        {{ end }}
+
     {{ end }}
 </ul>
 
