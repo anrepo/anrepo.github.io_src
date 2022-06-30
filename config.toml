@@ -1,4 +1,5 @@
 baseURL = "http://anrepo.github.io/"
+year = 2022
 languageCode = "ru"
 title = "Profile Project"
 theme = "template-theme"
@@ -64,23 +65,23 @@ copyright = 'Everything is mine'
             onlyHome = true
             subUrl = '#about'
     [[menu.header]]
-        identifier = 'projects'
-        name = 'Проекты'
-        url = '#projects'
+        identifier = 'skills'
+        name = 'Навыки'
+        url = '#skills'
         weight = 3
         onlyHome = true
         [menu.header.params]
             onlyHome = true
-            subUrl = '#projects'
+            subUrl = '#skills'
     [[menu.header]]
-        identifier = 'skills'
-        name = 'Навыки'
-        url = '#skills'
+        identifier = 'projects'
+        name = 'Проекты'
+        url = '#projects'
         weight = 4
         onlyHome = true
         [menu.header.params]
             onlyHome = true
-            subUrl = '#skills'
+            subUrl = '#projects'
 
     # [[menu.header]]
     #     dentifier = "blog"
