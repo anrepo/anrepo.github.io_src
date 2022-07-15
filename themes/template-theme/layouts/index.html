@@ -1,17 +1,14 @@
 {{ define "meta" }}
     {{ partial "pages/home/meta.html" . }}
 {{ end }}
-
 {{ define "styles" }}
     {{ partial "pages/home/styles.html" }}
 {{ end }}
-
 {{ define "body" }}
     <div class="vh-100 d-flex flex__column">
         {{ partial "pages/home/header.html" . }}
         {{ partial "pages/home/main.html" . }}
         {{ partial "blocks/footer.html" . }}
     </div>
-    
     {{ partial "pages/home/scripts-bottom.html" }}
 {{end}}

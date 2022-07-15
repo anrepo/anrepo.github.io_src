@@ -1,4 +1,10 @@
+# Локально для разработки
+# baseURL = "/"
+
+# Для публикации
 baseURL = "http://anrepo.github.io/"
+
+
 year = 2022
 languageCode = "ru"
 title = "Profile Project"
