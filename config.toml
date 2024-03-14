@@ -1,9 +1,8 @@
 # Локально для разработки
-# baseURL = "/"
+baseURL = "/"
 
 # Для публикации
-baseURL = "http://anrepo.github.io/"
-
+# baseURL = "http://anrepo.github.io/"
 
 year = 2022
 languageCode = "ru"
@@ -11,11 +10,9 @@ title = "Profile Project"
 theme = "template-theme"
 # theme = "bootstrap-theme"
 
-
 # false - добавит запись с версией Hugo первой строкой в тег <head>
 # например, такую: '<meta name="generator" content="Hugo 0.67.1" />'
 disableHugoGeneratorInject = true
-
 
 # Выбор Языка по умолчанию
 defaultContentLanguage = "ru"
@@ -24,88 +21,87 @@ defaultContentLanguageInSubdir = "false"
 disableLanguages = ["en", "ar", "fr"]
 copyright = 'Everything is mine'
 [languages]
-    [languages.ru]
-        languageName = 'Russian'
-        contentDir = 'content/ru'
-        title = 'Блог'
-        weight = 1
-    [languages.en]
-        languageName = 'English'
-        contentDir = 'content/en'
-        title = 'My Blog'
-        weight = 2
-    # Арабский введен для демонстрации использования
-    # правостороннего написания языка
-    [languages.ar]
-        languagedirection = 'rtl'
-        languageName = 'ar'
-        contentDir = 'content/ar'
-        title = 'مقالات'
-        weight = 3
-    [languages.fr]
-        languageName = 'fr'
-        contentDir = 'content/fr'
-        title = 'My blog'
-        weight = 4
-    [params]
-        [params.navigation]
-            help = 'Help'
+	[languages.ru]
+		languageName = 'Russian'
+		contentDir = 'content/ru'
+		title = 'Портфолио'
+		weight = 1
+	[languages.en]
+		languageCode = 'en-US'
+		languageName = 'English'
+		contentDir = 'content/en'
+		title = 'Profile'
+		weight = 2
+	# Арабский введен для демонстрации использования
+	# правостороннего написания языка
+	[languages.ar]
+		languagedirection = 'rtl'
+		languageName = 'ar'
+		contentDir = 'content/ar'
+		title = 'مقالات'
+		weight = 3
+	[languages.fr]
+		languageName = 'fr'
+		contentDir = 'content/fr'
+		title = 'My blog'
+		weight = 4
+	[params]
+		[params.navigation]
+			help = 'Help'
 
 
 # Для страниц Home, Blog и Contact меню обозначены
 # в заголовках фалов контента
 # Здесь заданы только яконрые ссылки
 [menu]
-    # [[menu.header]]
-    #     identifier = 'home'
-    #     name = 'Home'
-    #     url = '/'
-    #     weight = 1
+	# [[menu.header]]
+	#     identifier = 'home'
+	#     name = 'Home'
+	#     url = '/'
+	#     weight = 1
 
-    [[menu.header]]
-        identifier = 'about'
-        name = 'Обо мне'
-        url = '#about'
-        weight = 2
-        [menu.header.params]
-            onlyHome = true
-            subUrl = '#about'
-    [[menu.header]]
-        identifier = 'skills'
-        name = 'Навыки'
-        url = '#skills'
-        weight = 3
-        onlyHome = true
-        [menu.header.params]
-            onlyHome = true
-            subUrl = '#skills'
-    [[menu.header]]
-        identifier = 'projects'
-        name = 'Проекты'
-        url = '#projects'
-        weight = 4
-        onlyHome = true
-        [menu.header.params]
-            onlyHome = true
-            subUrl = '#projects'
+	[[menu.header]]
+		identifier = 'about'
+		name = 'Обо мне'
+		url = '#about'
+		weight = 2
+		[menu.header.params]
+			onlyHome = true
+			subUrl = '#about'
+	[[menu.header]]
+		identifier = 'skills'
+		name = 'Навыки'
+		url = '#skills'
+		weight = 3
+		onlyHome = true
+		[menu.header.params]
+			onlyHome = true
+			subUrl = '#skills'
+	[[menu.header]]
+		identifier = 'projects'
+		name = 'Проекты'
+		url = '#projects'
+		weight = 4
+		onlyHome = true
+		[menu.header.params]
+			onlyHome = true
+			subUrl = '#projects'
 
-    # [[menu.header]]
-    #     dentifier = "blog"
-    #     name = "Blog"
-    #     url = "/blog/"
-    #     weight = 5
-    # [[menu.header]]
-    #     dentifier = "contact"
-    #     name = "Contact"
-    #     url = "/contact/"
-    #     weight = 6
-
-
+	# [[menu.header]]
+	#     dentifier = "blog"
+	#     name = "Blog"
+	#     url = "/blog/"
+	#     weight = 5
+	# [[menu.header]]
+	#     dentifier = "contact"
+	#     name = "Contact"
+	#     url = "/contact/"
+	#     weight = 6
 
 [markup]
-    # Goldmark - это библиотека Hugo для использования языка разметки "Markdown"
-    [markup.goldmark]
-        [markup.goldmark.renderer]
-            # unsafe - со значением "true" позвоняет использовать html и javascript в файлах с расширением *.md (Markdown)
-            # по умолчанию unsafe = false
-            unsafe = true
+	# Goldmark - это библиотека Hugo для использования языка разметки "Markdown"
+	[markup.goldmark]
+		[markup.goldmark.renderer]
+			# unsafe - со значением "true" позвоняет использовать html и javascript в файлах с расширением *.md (Markdown)
+			# по умолчанию unsafe = false
+			unsafe = true

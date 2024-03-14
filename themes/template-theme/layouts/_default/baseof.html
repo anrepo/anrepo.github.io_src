@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="ru" data-theme="">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
-    
-        <!-- Мета данные -->
-        {{ block "meta" . }}{{ end }}
-    
-        <!-- Блок стилей -->
-        {{ block "styles" . }}{{ end }}
-    </head>
-    <body>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{{ block "title" . }}{{ .Title }}{{ end }}</title>
+	
+		<!-- Мета данные -->
+		{{ block "meta" . }}{{ end }}
+	
+		<!-- Блок стилей -->
+		{{ block "styles" . }}{{ end }}
+	</head>
+	<body>
 		<!-- Основная часть страницы -->
-        {{ block "body" . }}{{ end }}
+		{{ block "body" . }}{{ end }}
 
 		<!-- Скрипты -->
 		{{ block "scripts" . }}{{ end }}
-    </body>
+	</body>
 </html>
