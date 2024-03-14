@@ -16,13 +16,11 @@
 	Отзывчивое соотношение
 */
 
-
 // Размер шрифта
 // Использование: @include fsz(32px);
 @mixin fsz($size) {
 	font-size: $size;
 }
-
 
 // clearfix
 // пример: @include cfx;
@@ -37,7 +35,6 @@
 	* html & { height: 1px }
 }
 
-
 // Сброс параметров списка
 // Использование: @include ul-clear;
 @mixin ul-clear {
@@ -45,7 +42,6 @@
 	padding: 0;
 	list-style: none;
 }
-
 
 // Закругление всех углов блока
 // Использование: @include br(6px);
@@ -65,7 +61,6 @@
 	border-radius: $p1 $p2 $p3 $p4;
 }
 
-
 // Тень блока
 // Использование: @include bsh(1px, 1px, 3px, 0, gray, inset);
 @mixin bsh($top, $left, $blur, $size, $color, $inset: false) {
@@ -80,20 +75,17 @@
 		}
 }
 
-
 // Тень текста
 // Использование: @include ts(1px, 1px, 3px, yellow);
 @mixin ts($x, $y, $blur, $color) {
 	text-shadow: $x $y $blur $color;
 }
 
-
 // Множественная тень текста
 // Использование: @include text-shadow(3px 3px 2px red, 5px 5px 3px blue);
 @mixin text-shadow($shadows...) {
 	text-shadow: $shadows;
 }
-
 
 // Плавный переход (transition)
 // Использование: @include transit(color, 0.2s, ease-in-out);
@@ -105,7 +97,6 @@
 	transition: $what $when $how;
 }
 
-
 // Трансформации (transform)
 // Использование: @include transform(translate(-50%, -50%))
 @mixin transform($options...) {
@@ -114,7 +105,6 @@
 	-ms-transform: $options;
 	-o-transform: $options;
 }
-
 
 // Добавление многоточия для переполнения текста
 // Усечение при переполнении текста
@@ -127,7 +117,6 @@
 	text-overflow: ellipsis;
 }
 
-
 // Центрирование элемента по горизонтали
 // Использование: @include m-auto;
 @mixin m-auto {
@@ -136,7 +125,6 @@
 		right: auto;
 	}
 }
-
 
 // Вертикальное выравнивание для inline блока
 // Использование: @include vertical;
@@ -152,14 +140,12 @@
 	}
 }
 
-
 // Flex выравнивание по центру блока
 // Использование: @include flex-main-center;
 @mixin flex-main-center {
 	align-items: center;
 	justify-content: center;
 }
-
 
 // Поведение при наведении на ссылку
 // Использование: @include link-hover(none, $color);
@@ -170,7 +156,6 @@
 	}
 }
 
-
 // Псевдо элементы ::before и ::after
 // Использование: @include pseudo(inline-block, relative, 'text');
 @mixin pseudo($display: block, $pos: absolute, $content: ''){
@@ -178,7 +163,6 @@
 	display: $display;
 	position: $pos;
 }
-
 
 // Отзывчивое соотношение
 // Миксин нужен для сохранения масштабирования при изменении размеров блока
@@ -196,7 +180,6 @@
 		padding-top: $padding;
 	}
 }
-
 
 // Эффект при наведении
 // пример: @include hov1;

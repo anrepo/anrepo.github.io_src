@@ -18,12 +18,10 @@ window.addEventListener('resize', function() {
     heightHeader = document.querySelector('header').clientHeight;
 }, true);
 
-
 document.onscroll = function(){
     // Устанавливает полосу прогресса чтения страницы
     readingBar.setReadingProcess(readingBar.getVerticalScrollPercentage());
 }
-
 
 // Добавление для шапки класса прилипания к верхней части экрана при скролле
 // window.onscroll = function sticking(){
@@ -34,13 +32,11 @@ document.onscroll = function(){
 //     }
 // }
 
-
 // // Передача аргументов
 // function multiply(a, b, c) {
 //     return a * b * c;
 // }
 // console.log(multiply(1, 2, 3));
-
 
 // // Каррирование
 // function multicarr(a) {
@@ -51,7 +47,6 @@ document.onscroll = function(){
 //     }
 // }
 // console.log(multicarr(1)(2)(3));
-
 
 // $(document).ready(function() {
 // 	$('#fullpage').fullpage({

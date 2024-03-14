@@ -159,6 +159,19 @@ a.underline-animate:hover {
 
 .project-box a.project-link {
     font-size: 1em;
+    color: var(--font-color);
+
+    &:visited {
+        color: var(--font-color-visited);
+    }
+
+    &:hover {
+        color: var(--font-color-hover);
+    }
+
+    &:active {
+        color: var(--font-color-active);
+    }
 }
 
 .switch-color {

@@ -21,11 +21,12 @@ html[data-theme="light"] {
     --bgc-copyright: #cee6f2;
     --bgc-footer: #999999;
 
-
     --main-color: #202020;
     --secondary-color: #EBFFFA;
     --font-color: #0594cb;
     --font-color-hover: #96ccff;
+    --font-color-active: #180081;
+    --font-color-visited: #180081;
     --accent-color: #37cdbe;
 }
 
@@ -40,5 +41,7 @@ html[data-theme="dark"] {
     --secondary-color: #EBFFFA;
     --font-color: #0594cb;
     --font-color-hover: #96ccff;
+    --font-color-active: #999999;
+    --font-color-visited: #999999;
     --accent-color: #37cdbe;
 }
