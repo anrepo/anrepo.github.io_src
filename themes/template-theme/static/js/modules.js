@@ -1,3 +1,4 @@
+// Components
 import {headCarousel} from './components/carousel.js';
 import {progressCircle} from './components/circle-progress.js';
 import {themeButton} from './components/theme-mode.js';
@@ -5,6 +6,9 @@ import {anchorSlider} from './components/goto-anchor.js';
 import {toTopBtn} from './components/goto-top-button.js';
 import {navMenu} from './components/header-nav-menu.js';
 import {readingProcess} from './components/reading-process.js';
+
+// Pages
+import {homePage} from "./pages/home.js";
 
 /**
  * Определение глобальных переменных для внешнего использования
@@ -56,3 +60,8 @@ topButton.init();
  * Инициализация навигационных ссылок
  */
 navLinks.init();
+
+/**
+ * Инициализация Главной страницы
+ */
+homePage.init();
