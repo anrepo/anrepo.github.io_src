@@ -1,0 +1,18 @@
+[data-page="page--markdown"] {
+	main {
+		ul {
+			display: block;
+	
+			li {
+				position: relative;
+				margin-left: 1em;
+	
+				&::before {
+					content: "*";
+					position: absolute;
+					left: -1em;
+				}
+			}
+		}
+	}
+}
