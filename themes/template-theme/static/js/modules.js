@@ -1,3 +1,4 @@
+// Components
 import {headCarousel} from './components/carousel.js';
 import {progressCircle} from './components/circle-progress.js';
 import {themeButton} from './components/theme-mode.js';
@@ -6,6 +7,8 @@ import {toTopBtn} from './components/goto-top-button.js';
 import {navMenu} from './components/header-nav-menu.js';
 import {readingProcess} from './components/reading-process.js';
 
+// Pages
+import {homePage} from "./pages/home.js";
 
 /**
  * Определение глобальных переменных для внешнего использования
@@ -18,23 +21,17 @@ topButton           = toTopBtn;
 navLinks            = navMenu;
 readingBar          = readingProcess;
 
-
-
 /**
  * Инициализация Режима переключения цветовой темы
  */
 themeMode.init();
 
-
-
 // console.log(introduceCarousel);
-
 
 /**
  * Первичный запуск методов
  */
 introduceCarousel.init();
-
 
 /** 
  * Инициализация круговых прогресс баров скилов
@@ -49,22 +46,22 @@ cirleProgressBar.circles.git.setProgress(81);
 cirleProgressBar.circles.gulp.setProgress(71);
 cirleProgressBar.circles.leaflet.setProgress(43);
 
-
-
 /**
  * Инициализация плавной прокрутки по якорным ссылкам
  */
 anchorLinks.init();
-
 
 /**
  * Инициализация кнопки "Наверх"
  */
 topButton.init();
 
-
 /**
  * Инициализация навигационных ссылок
  */
 navLinks.init();
 
+/**
+ * Инициализация Главной страницы
+ */
+homePage.init();

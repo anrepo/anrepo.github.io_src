@@ -8,72 +8,79 @@
 <!-- jQuery UI SelecMenu init-->
 <script src="/js/components/select-menu.js"></script>
 
-
 <!-- Include Modules -->
 <script type="module">
-    import {themeButton} from '/js/components/theme-mode.js';
-    import {anchorSlider} from '/js/components/goto-anchor.js';
-    import {toTopBtn} from '/js/components/goto-top-button.js';
-    import {navMenu} from '/js/components/header-nav-menu.js';
-    import {readingProcess} from '/js/components/reading-process.js';
+	import {themeButton} from '/js/components/theme-mode.js';
+	import {anchorSlider} from '/js/components/goto-anchor.js';
+	import {toTopBtn} from '/js/components/goto-top-button.js';
+	import {navMenu} from '/js/components/header-nav-menu.js';
+	import {readingProcess} from '/js/components/reading-process.js';
 
-    themeMode   = themeButton,
-    anchorLinks = anchorSlider,
-    topButton   = toTopBtn,
-    navLinks    = navMenu
-    readingBar  = readingProcess;
+	themeMode   = themeButton,
+	anchorLinks = anchorSlider,
+	topButton   = toTopBtn,
+	navLinks    = navMenu
+	readingBar  = readingProcess;
 
+	/**
+	 * Инициализация Режима переключения цветовой темы
+	 */
+	themeMode.init();
 
-    /**
-     * Инициализация Режима переключения цветовой темы
-     */
-    themeMode.init();
+	/**
+	 * Инициализация плавной прокрутки по якорным ссылкам
+	 */
+	anchorLinks.init();
 
+	/**
+	 * Инициализация кнопки "Наверх"
+	 */
+	topButton.init();
 
-    /**
-     * Инициализация плавной прокрутки по якорным ссылкам
-     */
-    anchorLinks.init();
+	/**
+	 * Инициализация навигационных ссылок
+	 */
+	navLinks.init();
 
-
-    /**
-     * Инициализация кнопки "Наверх"
-     */
-    topButton.init();
-
-
-    /**
-     * Инициализация навигационных ссылок
-     */
-    navLinks.init();
-    
 </script>
 
 <!-- Global Vars. -->
 <script>
-    let themeMode,
-        anchorLinks,
-        topButton,
-        navLinks,
-        readingBar;
+	let themeMode,
+		anchorLinks,
+		topButton,
+		navLinks,
+		readingBar;
 
-    function saveLS() {
-        localStorage.setItem('navMenu', navLinks);
-    }
+	let heightHeader;
 
-    function viewLS() {
-        let obj = localStorage.getItem('navMenu');
-        console.log(obj);
-    }
+	document.addEventListener('DOMContentLoaded', function(){
+		console.log('Update Header Height');
+		heightHeader = document.querySelector('header').clientHeight;
+	});
 
-    function startLs() {
-        saveLS();
-        viewLS();
-    }
+	window.addEventListener('resize', function() {
+		console.log('Update Header Height');
+		heightHeader = document.querySelector('header').clientHeight;
+	}, true);
 
-    document.onscroll = function(){
-        // Устанавливает полосу прогресса чтения страницы
-        readingBar.setReadingProcess(readingBar.getVerticalScrollPercentage());
-    }
+	function saveLS() {
+		localStorage.setItem('navMenu', navLinks);
+	}
+
+	function viewLS() {
+		let obj = localStorage.getItem('navMenu');
+		console.log(obj);
+	}
+
+	function startLs() {
+		saveLS();
+		viewLS();
+	}
+
+	document.onscroll = function(){
+		// Устанавливает полосу прогресса чтения страницы
+		readingBar.setReadingProcess(readingBar.getVerticalScrollPercentage());
+	}
 
 </script>
