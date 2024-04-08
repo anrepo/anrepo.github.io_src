@@ -3,7 +3,6 @@ $font-size: 16px;
 
 $header-height: 50px;
 
-
 // :root {
 //     --main-color: #202020;
 //     --secondary-color: #EBFFFA;
@@ -15,33 +14,33 @@ $header-height: 50px;
 // }
 
 html[data-theme="light"] {
-    --bgc-body: #f9f9f9;
-    --color: #202020;
-    --bgc-section: #e5e9f2;
-    --bgc-copyright: #cee6f2;
-    --bgc-footer: #999999;
+	--bgc-body: #f9f9f9;
+	--color: #202020;
+	--bgc-section: #e5e9f2;
+	--bgc-copyright: #cee6f2;
+	--bgc-footer: #999999;
 
-    --main-color: #202020;
-    --secondary-color: #EBFFFA;
-    --font-color: #0594cb;
-    --font-color-hover: #96ccff;
-    --font-color-active: #180081;
-    --font-color-visited: #180081;
-    --accent-color: #37cdbe;
+	--main-color: #202020;
+	--secondary-color: #EBFFFA;
+	--font-color: #0594cb;
+	--font-color-hover: #96ccff;
+	--font-color-active: #180081;
+	--font-color-visited: #180081;
+	--accent-color: #37cdbe;
 }
 
 html[data-theme="dark"] {
-    --bgc-body: #333333;
-    --color: #EBFFFA;
-    --bgc-section: #202020;
-    --bgc-footer: #162434;
-    --bgc-copyright: #0594cb;
+	--bgc-body: #333333;
+	--color: #EBFFFA;
+	--bgc-section: #202020;
+	--bgc-footer: #162434;
+	--bgc-copyright: #0594cb;
 
-    --main-color: #202020;
-    --secondary-color: #EBFFFA;
-    --font-color: #0594cb;
-    --font-color-hover: #96ccff;
-    --font-color-active: #999999;
-    --font-color-visited: #999999;
-    --accent-color: #37cdbe;
+	--main-color: #202020;
+	--secondary-color: #EBFFFA;
+	--font-color: #0594cb;
+	--font-color-hover: #96ccff;
+	--font-color-active: #999999;
+	--font-color-visited: #999999;
+	--accent-color: #37cdbe;
 }
