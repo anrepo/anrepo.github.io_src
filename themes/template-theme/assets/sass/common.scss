@@ -48,6 +48,7 @@ h2 {
 h3 {
 	margin: 1.2rem 0 0.5rem;
 	font-size: 1.4rem;
+	color: inherit;
 }
 
 
@@ -58,11 +59,12 @@ p {
 }
 
 a {
-	font-size: 1.2em;
+	// font-size: 1.2em;
+	font-size: inherit;
 }
 
 ul {
-	display: flex;
+	// display: flex;
 	list-style: none;
 }
 
@@ -72,6 +74,40 @@ ul li a {
 
 img {
 	vertical-align: middle;
+}
+
+code {
+	padding: 0.25em 0.45em 0.14em;
+	color: var(--code-font-color);
+	background-color: var(--code-bgc);
+}
+
+textarea {
+	padding: 1em;
+	color: var(--color);
+	font-size: 1.2em;
+	border: 1px solid var(--bgc-body);
+	border-radius: 0.5em;
+	background-color: var(--textarea-bgc);
+}
+
+button {
+	padding: 0.75em 1.5em 0.5em;
+	color: var(--color);
+	font-size: 1.2em;
+	border-radius: 0.5em;
+	border: 1px solid var(--bgc-body);
+	background-color: var(--textarea-bgc);
+	cursor: pointer;
+	transition: opacity 0.3s;
+
+	&:hover {
+		opacity: 0.65;
+	}
+
+	&:active {
+
+	}
 }
 
 .hidden {

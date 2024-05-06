@@ -7,6 +7,9 @@
 <!-- jQuery UI Styles -->
 <link rel="stylesheet" href="{{ .Permalink }}/css/jquery-ui/jquery-ui.min.css">
 
+<!-- UIkit -->
+<!-- <link rel="stylesheet" href="{{ .Permalink }}/css/uikit-3.20.0/uikit.min.css"> -->
+
 <!-- Styles -->
 <!-- <link rel="stylesheet" href="{{.Permalink}}/css/style.css"> -->
 {{ $sass := resources.Get "sass/root.scss" | resources.ToCSS (dict "targetPath" "css/style.css") }}

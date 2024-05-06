@@ -27,6 +27,10 @@ html[data-theme="light"] {
 	--font-color-active: #180081;
 	--font-color-visited: #180081;
 	--accent-color: #37cdbe;
+
+	--code-bgc: #cee6f2;
+	--code-font-color: #262729;
+	--textarea-bgc: #cee6f2;
 }
 
 html[data-theme="dark"] {
@@ -43,4 +47,8 @@ html[data-theme="dark"] {
 	--font-color-active: #999999;
 	--font-color-visited: #999999;
 	--accent-color: #37cdbe;
+
+	--code-bgc: #262729;
+	--code-font-color: #e77171;
+	--textarea-bgc: #16171d;
 }
