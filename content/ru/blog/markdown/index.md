@@ -3,9 +3,9 @@ title: "Markdown"
 date: 2022-06-20T10:41:40+03:00
 author: "Apol"
 draft: false
-weight: 2
+# weight: 1
+# pageNumberingInListByWeight: true
 datapage: page--markdown
-pageNumberingInListByWeight: true
 ---
 
 Настоящий документ предназначен для ознакомления пользователя с функциональными возможностями языка разметки Markdown.
