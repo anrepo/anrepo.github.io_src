@@ -10,12 +10,13 @@
 @import 'blocks/footer.scss';
 
 // Elements
-@import 'elements/_dropdown-lang';
-@import 'elements/_skill-progress';
-@import 'elements/_head-carousel';
-@import 'elements/_top-button';
-@import 'elements/_reading-progress';
+@import 'elements/dropdown-lang';
+@import 'elements/skill-progress';
+@import 'elements/head-carousel';
+@import 'elements/top-button';
+@import 'elements/reading-progress';
 
 // Pages
-@import 'pages/_contact';
+@import 'pages/contact';
 @import 'pages/content-pages';
+@import 'pages/blog';

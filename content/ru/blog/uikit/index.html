@@ -1,0 +1,101 @@
+---
+title: "UIkit"
+date: 2024-04-23T16:41:34+03:00
+author: "Apol"
+draft: true
+weight: 1
+datapage: page--uikit
+pageNumberingInListByWeight: true
+---
+
+<p>Что такое UIkit для frontend разработчика?</p>
+<p>Скачать CSS и JavaScript можно на официальном сайте <a href="https://getuikit.com/docs/introduction" target="_blank" rel="noopener noreferrer">getuikit.com</a>.</p>
+<p>Подключение классическое. Стили в конец тега <head>, скрипты в конец документа. (Другие варианты подключения, например через Npm можно ознакомиться на <a href="https://github.com/uikit/uikit" target="_blank" rel="noopener noreferrer">github</a>)</p>
+
+<p>Стили:</p>
+
+<pre><code>&lt;link rel="stylesheet" href="css/uikit.min.css" /&gt;
+</code></pre>
+
+<p>Скрипты:</p>
+
+<pre><code>&lt;script src="js/uikit.min.js"&gt;&lt;/script&gt;
+&lt;script src="js/uikit-icons.min.js"&gt;&lt;/script&gt;
+</code></pre>
+
+<h3>Пример аккордеона</h3>
+<p>Для определения аккордеона устанавливаем атрибут uk-accordion.</p>
+<p>Так же отмечаем заголовки и контентную часть классами class="uk-accordion-title" и class="uk-accordion-content"</p>
+<p>Бонусом можно указать класс class="uk-open" определяющий открытый "по умолчанию" пункт.</p>
+
+<ul uk-accordion>
+	<li class="uk-open">
+		<a class="uk-accordion-title" href>Item 1</a>
+		<div class="uk-accordion-content">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+	</li>
+	<li>
+		<a class="uk-accordion-title" href>Item 2</a>
+		<div class="uk-accordion-content">
+			<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+		</div>
+	</li>
+	<li>
+		<a class="uk-accordion-title" href>Item 3</a>
+		<div class="uk-accordion-content">
+			<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+		</div>
+	</li>
+</ul>
+
+<h3>Предотвратить полное закрытие</h3>
+<p>Вместо стрибута uk-accordion ставим uk-accordion="collapsible: false".</p>
+
+<ul uk-accordion="collapsible: false">
+	<li class="uk-open">
+		<a class="uk-accordion-title" href>Item 1</a>
+		<div class="uk-accordion-content">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+	</li>
+	<li>
+		<a class="uk-accordion-title" href>Item 2</a>
+		<div class="uk-accordion-content">
+			<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+		</div>
+	</li>
+	<li>
+		<a class="uk-accordion-title" href>Item 3</a>
+		<div class="uk-accordion-content">
+			<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+		</div>
+	</li>
+</ul>
+
+<h3>Множественное открытие</h3>
+<p>Для множественное открытия нужно устанавливать атрибут со свойством uk-accordion="multiple: true"</p>
+<p>Можно комбинировать множественное открытие и запрет закрытие всех так - uk-accordion="multiple: true; collapsible: false"</p>
+
+<ul uk-accordion="multiple: true; collapsible: false">
+	<li class="uk-open">
+		<a class="uk-accordion-title" href>Item 1</a>
+		<div class="uk-accordion-content">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+	</li>
+	<li>
+		<a class="uk-accordion-title" href>Item 2</a>
+		<div class="uk-accordion-content">
+			<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+		</div>
+	</li>
+	<li>
+		<a class="uk-accordion-title" href>Item 3</a>
+		<div class="uk-accordion-content">
+			<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+		</div>
+	</li>
+</ul>
+
+<h3></h3>

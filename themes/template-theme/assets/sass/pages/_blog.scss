@@ -1,0 +1,28 @@
+html[data-theme="dark"] {
+	.uk-accordion-title {
+		color: whitesmoke;
+	}
+}
+
+.page--blog {
+	.blog-list {
+		a {
+			font-size: 1em;
+			color: var(--font-color);
+			text-decoration: none;
+			transition: color 0.25s linear;
+		
+			&:visited {
+				color: var(--font-color-visited);
+			}
+		
+			&:hover {
+				color: var(--font-color-hover);
+			}
+		
+			&:active {
+				color: var(--font-color-active);
+			}
+		}
+	}
+}
