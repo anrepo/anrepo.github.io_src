@@ -1,0 +1,112 @@
+---
+title: 'Эффект: "Вращающийся текст" (Spinning Text)'
+date: 2024-06-28T10:21:10+03:00
+author: "Apol"
+draft: false
+datapage: page--spinning-text
+---
+
+<style>
+	h1 {
+		margin-bottom: 60px;`
+	}
+
+	.post.container {
+		padding-bottom: 60px;
+	}
+
+	[data-page="page--spinning-text"] .section-container {
+		padding-top: 80px;
+	}
+
+	[data-page="page--spinning-text"] .rotatingHeader {
+		width: fit-content;
+		white-space: nowrap;
+	}
+
+	[data-page="page--spinning-text"] .rotatingHeader h1 {
+		font-family: 'Saira Extra Condensed', sans-serif;
+		color: #444;
+		font-size: 80px;
+		margin: 0;
+		padding: 0;
+		line-height: 0.5;
+		perspective: 800px;
+	}
+
+	[data-page="page--spinning-text"] .rotatingHeader h1:nth-child(2) {
+		color: #efefef;
+	}
+
+	html[data-theme="light"][data-page="page--spinning-text"] .rotatingHeader h1 {
+		color: var(--bgc-footer);
+	}
+
+	html[data-theme="light"][data-page="page--spinning-text"] .rotatingHeader h1:nth-child(2) {
+		color: var(--color);
+	}
+</style>
+
+<div class="rotatingHeader">
+	<h1>Скручивание через 3 сек</h1>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script>
+	const tl = gsap.timeline();
+
+	function gsapAnimationOne() {
+		let header = document.querySelector(".rotatingHeader");
+		let splitElement = header.querySelector("h1");
+		let cloneElement = splitElement.cloneNode(true);
+
+		header.appendChild(cloneElement);
+		gsap.set(cloneElement, { yPercent: -100 });
+
+		let splitElementSplitted = splitElement.textContent.split('');
+		let cloneSplitElement = splitElement.textContent.split('');
+
+		let splitElementChars = [];
+		let cloneSplitElementChars = [];
+
+		// clean element
+		splitElement.innerHTML = "";
+		cloneElement.innerHTML = "";
+
+		function charGenerate(splitElementSplitted, splitElement, splitElementChars) {
+			splitElementSplitted.forEach(element => {
+				if (element !== ' ') {
+					const letter = document.createElement('div');
+					letter.style = 'display: inline-block';
+					letter.classList.add('char');
+					letter.innerHTML = element;
+					splitElement.appendChild(letter);
+					splitElementChars.push(letter);
+				} else {
+					const space = document.createTextNode(' ');
+					space.innerHTML = element;
+					splitElement.appendChild(space);
+				}
+			});
+		}
+
+		charGenerate(splitElementSplitted, splitElement, splitElementChars);
+		charGenerate(cloneSplitElement, cloneElement, cloneSplitElementChars);
+
+		// global tween settings
+		let duration = 0.7;
+		let stagger = {each: 0.05, ease: "linear", from: "start"};
+
+		gsap.set(cloneSplitElementChars, { rotationX: -90, opacity: 0, transformOrigin: "50% 50% -40" });
+
+		tl.to(splitElementChars, { duration: duration, rotationX: 90, transformOrigin: "50% 50% -40", stagger: stagger });
+		tl.to(splitElementChars, { duration: duration, opacity: 0, stagger: stagger, ease: "linear"}, 0);
+
+		tl.to(cloneSplitElementChars, { duration: 0.05, opacity: 1, stagger: stagger }, 0.001);
+		tl.to(cloneSplitElementChars, { duration: duration, rotationX: 0, stagger: stagger }, 0);
+	}
+
+	setTimeout(() => {
+		gsapAnimationOne();
+	}, 3000);
+</script>
