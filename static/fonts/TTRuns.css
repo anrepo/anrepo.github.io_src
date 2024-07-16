@@ -1,0 +1,338 @@
+/*
+	TT Runs Trial
+	===
+
+	900 - TT Runs Trial Black
+	900 - TT Runs Trial Black Italic
+	800 - TT Runs Trial ExtraBold
+	800 - TT Runs Trial ExtraBold Italic
+	700 - TT Runs Trial Bold
+	700 - TT Runs Trial Bold Italic
+	600 - TT Runs Trial DemiBold Italic
+	600 - TT Runs Trial DemiBold
+	500 - TT Runs Trial Medium
+	500 - TT Runs Trial Medium Italic
+	400 - TT Runs Trial Regular
+	400 - TT Runs Trial Italic
+	300 - TT Runs Trial Light
+	300 - TT Runs Trial Light Italic
+	200 - TT Runs Trial ExtraLight
+	200 - TT Runs Trial ExtraLight Italic
+	100 - TT Runs Trial Thin Italic
+	100 - TT Runs Trial Thin
+
+	900 - TT Runs Black Outline
+	900 - TT Runs Black Outline Italic
+
+	400 - TT Runs Trial Variable Roman
+	400 - TT Runs Trial Variable Italic
+*/
+
+@font-face {
+	font-family: 'TT Runs Trial';
+	src: url('TTRunsTrial-ExtraLightItalic.eot');
+	src: local('TT Runs Trial ExtraLight Italic'),
+		local('TTRunsTrial-ExtraLightItalic'),
+		url('TTRuns/TTRunsTrial-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+		url('TTRuns/TTRunsTrial-ExtraLightItalic.woff2') format('woff2'),
+		url('TTRuns/TTRunsTrial-ExtraLightItalic.woff') format('woff'),
+		url('TTRuns/TTRunsTrial-ExtraLightItalic.ttf') format('truetype'),
+		url('TTRuns/TTRunsTrial-ExtraLightItalic.svg#TTRunsTrial-ExtraLightItalic') format('svg');
+	font-weight: 200;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'TT Runs Trial';
+	src: url('TTRunsTrial-Black.eot');
+	src: local('TT Runs Trial Black'), local('TTRunsTrial-Black'),
+		url('TTRuns/TTRunsTrial-Black.eot?#iefix') format('embedded-opentype'),
+		url('TTRuns/TTRunsTrial-Black.woff2') format('woff2'),
+		url('TTRuns/TTRunsTrial-Black.woff') format('woff'),
+		url('TTRuns/TTRunsTrial-Black.ttf') format('truetype'),
+		url('TTRuns/TTRunsTrial-Black.svg#TTRunsTrial-Black') format('svg');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'TT Runs Trial';
+	src: url('TTRunsTrial-ExtraBoldItalic.eot');
+	src: local('TT Runs Trial ExtraBold Italic'), local('TTRunsTrial-ExtraBoldItalic'),
+		url('TTRuns/TTRunsTrial-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('TTRuns/TTRunsTrial-ExtraBoldItalic.woff2') format('woff2'),
+		url('TTRuns/TTRunsTrial-ExtraBoldItalic.woff') format('woff'),
+		url('TTRuns/TTRunsTrial-ExtraBoldItalic.ttf') format('truetype'),
+		url('TTRuns/TTRunsTrial-ExtraBoldItalic.svg#TTRunsTrial-ExtraBoldItalic') format('svg');
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'TT Runs Trial';
+	src: url('TTRunsTrial-Bold.eot');
+	src: local('TT Runs Trial Bold'), local('TTRunsTrial-Bold'),
+		url('TTRuns/TTRunsTrial-Bold.eot?#iefix') format('embedded-opentype'),
+		url('TTRuns/TTRunsTrial-Bold.woff2') format('woff2'),
+		url('TTRuns/TTRunsTrial-Bold.woff') format('woff'),
+		url('TTRuns/TTRunsTrial-Bold.ttf') format('truetype'),
+		url('TTRuns/TTRunsTrial-Bold.svg#TTRunsTrial-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'TT Runs Black Outline';
+	src: url('TTRuns-BlackOutline.eot');
+	src: local('TT Runs Black Outline'), local('TTRuns-BlackOutline'),
+		url('TTRuns/TTRuns-BlackOutline.eot?#iefix') format('embedded-opentype'),
+		url('TTRuns/TTRuns-BlackOutline.woff2') format('woff2'),
+		url('TTRuns/TTRuns-BlackOutline.woff') format('woff'),
+		url('TTRuns/TTRuns-BlackOutline.ttf') format('truetype'),
+		url('TTRuns/TTRuns-BlackOutline.svg#TTRuns-BlackOutline') format('svg');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'TT Runs Trial';
+	src: url('TTRunsTrial-BoldItalic.eot');
+	src: local('TT Runs Trial Bold Italic'), local('TTRunsTrial-BoldItalic'),
+		url('TTRuns/TTRunsTrial-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('TTRuns/TTRunsTrial-BoldItalic.woff2') format('woff2'),
+		url('TTRuns/TTRunsTrial-BoldItalic.woff') format('woff'),
+		url('TTRuns/TTRunsTrial-BoldItalic.ttf') format('truetype'),
+		url('TTRuns/TTRunsTrial-BoldItalic.svg#TTRunsTrial-BoldItalic') format('svg');
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'TT Runs Trial';
+	src: url('TTRunsTrial-BlackItalic.eot');
+	src: local('TT Runs Trial Black Italic'), local('TTRunsTrial-BlackItalic'),
+		url('TTRuns/TTRunsTrial-BlackItalic.eot?#iefix') format('embedded-opentype'),
+		url('TTRuns/TTRunsTrial-BlackItalic.woff2') format('woff2'),
+		url('TTRuns/TTRunsTrial-BlackItalic.woff') format('woff'),
+		url('TTRuns/TTRunsTrial-BlackItalic.ttf') format('truetype'),
+		url('TTRuns/TTRunsTrial-BlackItalic.svg#TTRunsTrial-BlackItalic') format('svg');
+	font-weight: 900;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'TT Runs Trial';
+	src: url('TTRunsTrial-DemiBoldItalic.eot');
+	src: local('TT Runs Trial DemiBold Italic'), local('TTRunsTrial-DemiBoldItalic'),
+		url('TTRuns/TTRunsTrial-DemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('TTRuns/TTRunsTrial-DemiBoldItalic.woff2') format('woff2'),
+		url('TTRuns/TTRunsTrial-DemiBoldItalic.woff') format('woff'),
+		url('TTRuns/TTRunsTrial-DemiBoldItalic.ttf') format('truetype'),
+		url('TTRuns/TTRunsTrial-DemiBoldItalic.svg#TTRunsTrial-DemiBoldItalic') format('svg');
+	font-weight: 600;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'TT Runs Trial';
+	src: url('TTRunsTrial-DemiBold.eot');
+	src: local('TT Runs Trial DemiBold'), local('TTRunsTrial-DemiBold'),
+		url('TTRuns/TTRunsTrial-DemiBold.eot?#iefix') format('embedded-opentype'),
+		url('TTRuns/TTRunsTrial-DemiBold.woff2') format('woff2'),
+		url('TTRuns/TTRunsTrial-DemiBold.woff') format('woff'),
+		url('TTRuns/TTRunsTrial-DemiBold.ttf') format('truetype'),
+		url('TTRuns/TTRunsTrial-DemiBold.svg#TTRunsTrial-DemiBold') format('svg');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'TT Runs Trial';
+	src: url('TTRunsTrial-ExtraBold.eot');
+	src: local('TT Runs Trial ExtraBold'), local('TTRunsTrial-ExtraBold'),
+		url('TTRuns/TTRunsTrial-ExtraBold.eot?#iefix') format('embedded-opentype'),
+		url('TTRuns/TTRunsTrial-ExtraBold.woff2') format('woff2'),
+		url('TTRuns/TTRunsTrial-ExtraBold.woff') format('woff'),
+		url('TTRuns/TTRunsTrial-ExtraBold.ttf') format('truetype'),
+		url('TTRuns/TTRunsTrial-ExtraBold.svg#TTRunsTrial-ExtraBold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'TT Runs Black Outline';
+	src: url('TTRuns-BlackOutlineItalic.eot');
+	src: local('TT Runs Black Outline Italic'), local('TTRuns-BlackOutlineItalic'),
+		url('TTRuns/TTRuns-BlackOutlineItalic.eot?#iefix') format('embedded-opentype'),
+		url('TTRuns/TTRuns-BlackOutlineItalic.woff2') format('woff2'),
+		url('TTRuns/TTRuns-BlackOutlineItalic.woff') format('woff'),
+		url('TTRuns/TTRuns-BlackOutlineItalic.ttf') format('truetype'),
+		url('TTRuns/TTRuns-BlackOutlineItalic.svg#TTRuns-BlackOutlineItalic') format('svg');
+	font-weight: 900;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'TT Runs Trial';
+	src: url('TTRunsTrial-ExtraLight.eot');
+	src: local('TT Runs Trial ExtraLight'), local('TTRunsTrial-ExtraLight'),
+		url('TTRuns/TTRunsTrial-ExtraLight.eot?#iefix') format('embedded-opentype'),
+		url('TTRuns/TTRunsTrial-ExtraLight.woff2') format('woff2'),
+		url('TTRuns/TTRunsTrial-ExtraLight.woff') format('woff'),
+		url('TTRuns/TTRunsTrial-ExtraLight.ttf') format('truetype'),
+		url('TTRuns/TTRunsTrial-ExtraLight.svg#TTRunsTrial-ExtraLight') format('svg');
+	font-weight: 200;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'TT Runs Trial';
+	src: url('TTRunsTrial-MediumItalic.eot');
+	src: local('TT Runs Trial Medium Italic'), local('TTRunsTrial-MediumItalic'),
+		url('TTRuns/TTRunsTrial-MediumItalic.eot?#iefix') format('embedded-opentype'),
+		url('TTRuns/TTRunsTrial-MediumItalic.woff2') format('woff2'),
+		url('TTRuns/TTRunsTrial-MediumItalic.woff') format('woff'),
+		url('TTRuns/TTRunsTrial-MediumItalic.ttf') format('truetype'),
+		url('TTRuns/TTRunsTrial-MediumItalic.svg#TTRunsTrial-MediumItalic') format('svg');
+	font-weight: 500;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'TT Runs Trial';
+	src: url('TTRunsTrial-Italic.eot');
+	src: local('TT Runs Trial Italic'), local('TTRunsTrial-Italic'),
+		url('TTRuns/TTRunsTrial-Italic.eot?#iefix') format('embedded-opentype'),
+		url('TTRuns/TTRunsTrial-Italic.woff2') format('woff2'),
+		url('TTRuns/TTRunsTrial-Italic.woff') format('woff'),
+		url('TTRuns/TTRunsTrial-Italic.ttf') format('truetype'),
+		url('TTRuns/TTRunsTrial-Italic.svg#TTRunsTrial-Italic') format('svg');
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'TT Runs Trial Variable Roman';
+	src: url('TTRunsTrialVariableRoman.eot');
+	src: local('TT Runs Trial Variable Roman'), local('TTRunsTrialVariableRoman'),
+		url('TTRuns/TTRunsTrialVariableRoman.eot?#iefix') format('embedded-opentype'),
+		url('TTRuns/TTRunsTrialVariableRoman.woff2') format('woff2'),
+		url('TTRuns/TTRunsTrialVariableRoman.woff') format('woff'),
+		url('TTRuns/TTRunsTrialVariableRoman.ttf') format('truetype'),
+		url('TTRuns/TTRunsTrialVariableRoman.svg#TTRunsTrialVariableRoman') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'TT Runs Trial';
+	src: url('TTRunsTrial-Regular.eot');
+	src: local('TT Runs Trial Regular'), local('TTRunsTrial-Regular'),
+		url('TTRuns/TTRunsTrial-Regular.eot?#iefix') format('embedded-opentype'),
+		url('TTRuns/TTRunsTrial-Regular.woff2') format('woff2'),
+		url('TTRuns/TTRunsTrial-Regular.woff') format('woff'),
+		url('TTRuns/TTRunsTrial-Regular.ttf') format('truetype'),
+		url('TTRuns/TTRunsTrial-Regular.svg#TTRunsTrial-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'TT Runs Trial';
+	src: url('TTRunsTrial-Medium.eot');
+	src: local('TT Runs Trial Medium'), local('TTRunsTrial-Medium'),
+		url('TTRuns/TTRunsTrial-Medium.eot?#iefix') format('embedded-opentype'),
+		url('TTRuns/TTRunsTrial-Medium.woff2') format('woff2'),
+		url('TTRuns/TTRunsTrial-Medium.woff') format('woff'),
+		url('TTRuns/TTRunsTrial-Medium.ttf') format('truetype'),
+		url('TTRuns/TTRunsTrial-Medium.svg#TTRunsTrial-Medium') format('svg');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'TT Runs Trial';
+	src: url('TTRunsTrial-ThinItalic.eot');
+	src: local('TT Runs Trial Thin Italic'), local('TTRunsTrial-ThinItalic'),
+		url('TTRuns/TTRunsTrial-ThinItalic.eot?#iefix') format('embedded-opentype'),
+		url('TTRuns/TTRunsTrial-ThinItalic.woff2') format('woff2'),
+		url('TTRuns/TTRunsTrial-ThinItalic.woff') format('woff'),
+		url('TTRuns/TTRunsTrial-ThinItalic.ttf') format('truetype'),
+		url('TTRuns/TTRunsTrial-ThinItalic.svg#TTRunsTrial-ThinItalic') format('svg');
+	font-weight: 100;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'TT Runs Trial';
+	src: url('TTRunsTrial-Thin.eot');
+	src: local('TT Runs Trial Thin'), local('TTRunsTrial-Thin'),
+		url('TTRuns/TTRunsTrial-Thin.eot?#iefix') format('embedded-opentype'),
+		url('TTRuns/TTRunsTrial-Thin.woff2') format('woff2'),
+		url('TTRuns/TTRunsTrial-Thin.woff') format('woff'),
+		url('TTRuns/TTRunsTrial-Thin.ttf') format('truetype'),
+		url('TTRuns/TTRunsTrial-Thin.svg#TTRunsTrial-Thin') format('svg');
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'TT Runs Trial Variable Italic';
+	src: url('TTRunsTrialVariableItalic.eot');
+	src: local('TT Runs Trial Variable Italic'), local('TTRunsTrialVariableItalic'),
+		url('TTRuns/TTRunsTrialVariableItalic.eot?#iefix') format('embedded-opentype'),
+		url('TTRuns/TTRunsTrialVariableItalic.woff2') format('woff2'),
+		url('TTRuns/TTRunsTrialVariableItalic.woff') format('woff'),
+		url('TTRuns/TTRunsTrialVariableItalic.ttf') format('truetype'),
+		url('TTRuns/TTRunsTrialVariableItalic.svg#TTRunsTrialVariableItalic') format('svg');
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'TT Runs Trial';
+	src: url('TTRunsTrial-Light.eot');
+	src: local('TT Runs Trial Light'), local('TTRunsTrial-Light'),
+		url('TTRuns/TTRunsTrial-Light.eot?#iefix') format('embedded-opentype'),
+		url('TTRuns/TTRunsTrial-Light.woff2') format('woff2'),
+		url('TTRuns/TTRunsTrial-Light.woff') format('woff'),
+		url('TTRuns/TTRunsTrial-Light.ttf') format('truetype'),
+		url('TTRuns/TTRunsTrial-Light.svg#TTRunsTrial-Light') format('svg');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'TT Runs Trial';
+	src: url('TTRunsTrial-LightItalic.eot');
+	src: local('TT Runs Trial Light Italic'), local('TTRunsTrial-LightItalic'),
+		url('TTRuns/TTRunsTrial-LightItalic.eot?#iefix') format('embedded-opentype'),
+		url('TTRuns/TTRunsTrial-LightItalic.woff2') format('woff2'),
+		url('TTRuns/TTRunsTrial-LightItalic.woff') format('woff'),
+		url('TTRuns/TTRunsTrial-LightItalic.ttf') format('truetype'),
+		url('TTRuns/TTRunsTrial-LightItalic.svg#TTRunsTrial-LightItalic') format('svg');
+	font-weight: 300;
+	font-style: italic;
+	font-display: swap;
+}
