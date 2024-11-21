@@ -1,41 +1,73 @@
 <footer id="footer">
-    <div class="bgc__grey">
-        <div class="container d-grid footer-column">
-            <div class="site-map">
-                <h3>Карта сайта</h3>
-                <!-- <ul>
+  <div class="bgc__grey">
+    <div class="container d-grid footer-column">
+      <div class="site-map">
+        <h3>Карта сайта</h3>
+        <!-- <ul>
                     <li><a class="nav-menu-link goToAnchor nav-menu__active" href="{{ .Permalink }}#head-carousel">{{ i18n "home" }}</a></li>
                     <li><a class="nav-menu-link goToAnchor" href="{{ .Permalink }}#about">{{ i18n "about" }}</a></li>
                     <li><a class="nav-menu-link goToAnchor" href="{{ .Permalink }}#skills">{{ i18n "skills" }}</a></li>
                     <li><a class="nav-menu-link goToAnchor" href="{{ .Permalink }}#projects">{{ i18n "projects" }}</a></li>
                     <li><a href=""></a></li>
                 </ul> -->
-                {{ partial "navigations/footer-nav.html" . }}
-            </div>
-            <div class="contacts">
-                <h3>{{ i18n "contacts" }}</h3>
-                <ul style="display:list-item">
-                    <li>Телефон: <a class="link-hover" href="tel:+79152068484">+7(915) 206-84-84</a></li>
-                    <li>Email: <a class="link-hover" href="mailto:test@mail.ru">test@mail.ru</a></li>
-                    <li><address>Адрес: Москва, Ленина, д.20, кв.34</address></li>
-                    <li>Social Links: </i><i class="social-icons link-hover fa-brands fa-instagram"></i><i class="social-icons link-hover fa-brands fa-vk"></i></li>
-                    <li>Github link: <a class="link-hover" href="https://github.com/anrepo/" target="_blank">github.com/anrepo/</a></li>
-                </ul>
-            </div>
-        </div>
+        {{ partial "navigations/footer-nav.html" . }}
+      </div>
+      <div class="contacts">
+        <h3>{{ i18n "contacts" }}</h3>
+        <ul style="display: list-item">
+          <li>
+            Телефон:
+            <a class="link-hover" href="tel:+79152068484">+7(915) 206-84-84</a>
+          </li>
+          <li>
+            Email:
+            <a class="link-hover" href="mailto:test@mail.ru">test@mail.ru</a>
+          </li>
+          <li><address>Адрес: Москва, Ленина, д.20, кв.34</address></li>
+          <li>
+            Social Links:
+            <i class="social-icons link-hover fa-brands fa-instagram"></i
+            ><i class="social-icons link-hover fa-brands fa-vk"></i>
+          </li>
+          <li>
+            Github link:
+            <a
+              class="link-hover"
+              href="https://github.com/anrepo/"
+              target="_blank"
+              >github.com/anrepo/</a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="notice bgc__grey">
-        <div class="container">
-            <hr>
-            <p>Notice!</p>
-            <!-- <hr> -->
-        </div>
+  </div>
+  <div class="notice bgc__grey">
+    <div class="container">
+      <hr />
+      <p>Notice!</p>
+      <!-- <hr> -->
     </div>
-    <div class="copyright switch-color">
-        <div class="container d-flex jc-between ai-center">
-            <span class="copyright"><a href="/"><img class="apol-logo" src="/img/favicon/favicon.svg" alt="Apol"></a>created by Andrey Polenok</span>
-            <span>&copy; 2024 Copyright</span>
-            <span>Powered by <a href="https://gohugo.io/" target="_blank"><img class="hugo-logo" src="/img/icons/hugo-logo.svg" alt="Hugo"></a></span>
-        </div>
+  </div>
+  <div class="copyright switch-color">
+    <div class="container d-flex jc-between ai-center">
+      <span class="copyright"
+        ><a href="/"
+          ><img
+            class="apol-logo"
+            src="/img/favicon/favicon.svg"
+            alt="Apol" /></a
+        >created by Andrey Polenok</span
+      >
+      <span>&copy; 2024 Copyright</span>
+      <span
+        >Powered by
+        <a href="https://gohugo.io/" target="_blank"
+          ><img
+            class="hugo-logo"
+            src="/img/icons/hugo-logo.svg"
+            alt="Hugo" /></a
+      ></span>
     </div>
+  </div>
 </footer>
