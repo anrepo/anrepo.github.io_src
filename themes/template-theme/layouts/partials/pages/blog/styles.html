@@ -12,5 +12,5 @@
 
 <!-- Styles -->
 <!-- <link rel="stylesheet" href="{{.Permalink}}/css/style.css"> -->
-{{ $sass := resources.Get "sass/root.scss" | resources.ToCSS (dict "targetPath" "css/style.css") }}
+{{ $sass := resources.Get "sass/root.scss" | css.Sass (dict "targetPath" "css/style.css") }}
 <link rel="stylesheet" href="{{ $sass.Permalink }}">
