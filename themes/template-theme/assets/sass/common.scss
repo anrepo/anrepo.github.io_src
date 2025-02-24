@@ -104,10 +104,6 @@ button {
 	&:hover {
 		opacity: 0.65;
 	}
-
-	&:active {
-
-	}
 }
 
 .hidden {
@@ -173,4 +169,9 @@ button {
 .bgc__grey {
 	background-color: var(--bgc-footer);
 	color: var(--secondary-color);
+}
+
+.small {
+	font-size: 0.7rem;
+	font-style: italic;
 }
