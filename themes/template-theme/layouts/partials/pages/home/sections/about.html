@@ -1,6 +1,8 @@
 <section id="about" class="switch-color">
     <div class="container">
-        <h2>{{ i18n "about" }}</h2>
-        <p>"Hello, I am Andrey!</p>
+        <!-- <h2>{{/* i18n "about" . */}}</h2> -->
+        <h2>{{ .Params.about.title }}</h2>
+        <!-- <p>{{/* i18n "section-about" . */}}</p> -->
+        <p>{{ .Params.about.content }}</p>
     </div>
 </section>

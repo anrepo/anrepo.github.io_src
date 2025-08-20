@@ -7,15 +7,15 @@ let anchorSlider = (function() {
 		let singleTitlesItem = document.querySelectorAll(".goToAnchor");
 
 		singleTitlesItem.forEach(function(item) {
-			// Если у элемента списка задан атрибут href 
+			// Если у элемента списка задан атрибут href
 			// href генерируется средствами Hugo на странице "single.html"
 			if (typeof item.hasAttribute('sub-href') !== 'undefined' && item.hasAttribute('sub-href') !== false) {
-				
+
 				item.addEventListener('click', function(e) {
 					e.preventDefault();
 					let hrefLink = $(this).attr('sub-href').substring(1);
 					let offestY = $('#' + hrefLink).offset();
-					
+
 					// скроллинг с плавной анимацией
 					$('html, body').stop().animate({ scrollTop: offestY.top - heightHeader }, 900);
 				});

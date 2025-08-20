@@ -1,9 +1,10 @@
 <main class="h-100 fg-1">
-    {{ partial "pages/home/sections/slider" }}
-    {{ partial "pages/home/sections/about" }}
-    {{ partial "pages/home/sections/skills" }}
-    {{ partial "pages/home/sections/connection" }}
-    {{ partial "pages/home/sections/projects" }}
+    {{ partial "pages/home/sections/slider" . }}
+    {{ partial "pages/home/sections/ads" . }}
+    {{ partial "pages/home/sections/about" . }}
+    {{ partial "pages/home/sections/skills" . }}
+    {{ partial "pages/home/sections/connection" . }}
+    {{ partial "pages/home/sections/projects" . }}
 
-    {{ partial "components/toTopBtn" }}
+    {{ partial "components/toTopBtn" . }}
 </main>

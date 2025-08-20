@@ -1,11 +1,10 @@
 # Локально для разработки
-baseURL = "/"
+# baseURL = "/"
 
 # Для публикации
 # baseURL = "http://anrepo.github.io/"
 
 year = 2022
-languageCode = "ru"
 title = "Profile Project"
 theme = "template-theme"
 # theme = "bootstrap-theme"
@@ -15,23 +14,98 @@ theme = "template-theme"
 disableHugoGeneratorInject = true
 
 # Выбор Языка по умолчанию
-defaultContentLanguage = "ru"
-defaultContentLanguageInSubdir = "false"
+languageCode = 'ru'
+defaultContentLanguage = 'ru'
+# Добавляет /en/ или /ru/ в адресную строку
+defaultContentLanguageInSubdir = true
+# disableDefaultLanguageRedirect = false
 # Отключение неиспользуемых языков (полезно при работе над переводом)
-disableLanguages = ["en", "ar", "fr"]
+disableLanguages = ["ar", "fr"]
 copyright = 'Everything is mine'
+
 [languages]
 	[languages.ru]
-		languageName = 'Russian'
-		contentDir = 'content/ru'
-		title = 'Портфолио'
-		weight = 1
+		disabled = false
+    languageCode = 'ru'
+    languageDirection = 'ltr'
+    contentDir = 'content/ru'
+    languageName = 'Russia'
+    title = 'Портфолио'
+    timeZone = 'Europe/Moscow'
+    copyright = 'Все права защищены'
+    weight = 1
+		[languages.ru.menus]
+			[[languages.ru.menus.header]]
+				name = 'На главную'
+				pageRef = '/'
+				weight = 1
+			[[languages.ru.menus.header]]
+				name = 'Обо мне'
+				weight = 2
+				[[languages.ru.menus.header.params]]
+					onlyHome = true
+					subUrl = '#about'
+			[[languages.ru.menus.header]]
+				name = 'Навыки'
+				weight = 3
+				[[languages.ru.menus.header.params]]
+					onlyHome = true
+					subUrl = '#skills'
+			[[languages.ru.menus.header]]
+				name = 'Проекты'
+				weight = 4
+				[[languages.ru.menus.header.params]]
+					onlyHome = true
+					subUrl = '#projects'
+			[[languages.ru.menus.header]]
+				name = "Блог"
+				pageRef = "/blog/"
+				weight = 5
+			[[languages.ru.menus.header]]
+				name = "Обратная связь"
+				pageRef = "/contact/"
+				weight = 6
 	[languages.en]
-		languageCode = 'en-US'
-		languageName = 'English'
-		contentDir = 'content/en'
-		title = 'Profile'
-		weight = 2
+		disabled = false
+    languageCode = 'en-US'
+    languageDirection = 'ltr'
+    contentDir = 'content/en'
+    languageName = 'English'
+    title = 'Profile'
+    timeZone = 'America/New_York'
+    copyright = 'All rights reserved'
+    weight = 2
+		[languages.en.menus]
+			[[languages.en.menus.header]]
+				name = 'Home'
+				pageRef = '/'
+				weight = 1
+			[[languages.en.menus.header]]
+				name = 'About'
+				weight = 2
+				[[languages.en.menus.header.params]]
+					onlyHome = true
+					subUrl = '#about'
+			[[languages.en.menus.header]]
+				name = 'Skills'
+				weight = 3
+				[[languages.en.menus.header.params]]
+					onlyHome = true
+					subUrl = '#skills'
+			[[languages.en.menus.header]]
+				name = 'Projects'
+				weight = 4
+				[[languages.en.menus.header.params]]
+					onlyHome = true
+					subUrl = '#projects'
+			[[languages.en.menus.header]]
+				name = "Blog"
+				pageRef = "/blog/"
+				weight = 5
+			[[languages.en.menus.header]]
+				name = "Contacts"
+				pageRef = "/contact/"
+				weight = 6
 	# Арабский введен для демонстрации использования
 	# правостороннего написания языка
 	[languages.ar]
@@ -45,58 +119,57 @@ copyright = 'Everything is mine'
 		contentDir = 'content/fr'
 		title = 'My blog'
 		weight = 4
-	[params]
-		[params.navigation]
-			help = 'Help'
 
+[params]
+	[params.navigation]
+		help = 'Help'
 
 # Для страниц Home, Blog и Contact меню обозначены
 # в заголовках фалов контента
 # Здесь заданы только яконрые ссылки
-[menu]
-	# [[menu.header]]
-	#     identifier = 'home'
-	#     name = 'Home'
-	#     url = '/'
-	#     weight = 1
-
-	[[menu.header]]
-		identifier = 'about'
-		name = 'Обо мне'
-		url = '#about'
-		weight = 2
-		[menu.header.params]
-			onlyHome = true
-			subUrl = '#about'
-	[[menu.header]]
-		identifier = 'skills'
-		name = 'Навыки'
-		url = '#skills'
-		weight = 3
-		onlyHome = true
-		[menu.header.params]
-			onlyHome = true
-			subUrl = '#skills'
-	[[menu.header]]
-		identifier = 'projects'
-		name = 'Проекты'
-		url = '#projects'
-		weight = 4
-		onlyHome = true
-		[menu.header.params]
-			onlyHome = true
-			subUrl = '#projects'
-
-	# [[menu.header]]
-	#     dentifier = "blog"
-	#     name = "Blog"
-	#     url = "/blog/"
-	#     weight = 5
-	# [[menu.header]]
-	#     dentifier = "contact"
-	#     name = "Contact"
-	#     url = "/contact/"
-	#     weight = 6
+# ЕСЛИ ЕСТЬ ПЕРЕВОД В LANGUAGES, ТО НЕ НУЖНА ТАКАЯ ЗАПИСЬ!!!
+# [menu]
+# 	[[menu.header]]
+# 	    identifier = 'home'
+# 	    name = 'На главную'
+# 	    url = '/'
+# 	    weight = 1
+# 	[[menu.header]]
+# 		identifier = 'about'
+# 		name = 'Обо мне'
+# 		url = '#about'
+# 		weight = 2
+# 		[menu.header.params]
+# 			onlyHome = true
+# 			subUrl = '#about'
+# 	[[menu.header]]
+# 		identifier = 'skills'
+# 		name = 'Навыки'
+# 		url = '#skills'
+# 		weight = 3
+# 		onlyHome = true
+# 		[menu.header.params]
+# 			onlyHome = true
+# 			subUrl = '#skills'
+# 	[[menu.header]]
+# 		identifier = 'projects'
+# 		name = 'Проекты'
+# 		url = '#projects'
+# 		weight = 4
+# 		onlyHome = true
+# 		[menu.header.params]
+# 			onlyHome = true
+# 			subUrl = '#projects'
+# 	[[menu.header]]
+# 	    dentifier = "blog"
+# 	    name = "Blog"
+# 	    url = "/blog/"
+# 	    weight = 5
+# 	[[menu.header]]
+# 	    dentifier = "contact"
+# 	    name = "Contact"
+# 	    url = "/contact/"
+# 	    weight = 6
 
 [markup]
 	# Goldmark - это библиотека Hugo для использования языка разметки "Markdown"

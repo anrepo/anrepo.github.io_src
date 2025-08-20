@@ -1,0 +1,60 @@
+---
+title: "Конвертер в мнемоники"
+date: 2024-05-06T21:36:13+03:00
+author: "Apol"
+draft: false
+## weight: 2
+## pageNumberingInListByWeight: true
+datapage: page--mnemonic-converter
+---
+
+<style>
+	#input,
+	#output {
+		resize: vertical;
+	}
+</style>
+
+<p>Преобразование спец. символов в символы мнемоники.</p>
+<p>Будет полезно для публикации кода разметки на сайте.</p>
+<p>Так заменяются:</p>
+<ul>
+	<li><code>&</code> на <code>&amp;amp;</code></li>
+	<li><code>'</code> на <code>&amp;#39;</code></li>
+	<li><code>"</code> на <code>&amp;quot;</code></li>
+	<li><code><</code> на <code>&amp;lt;</code></li>
+	<li><code>></code> на <code>&amp;gt;</code></li>
+</ul>
+
+<p>Для папримера: <code>I&#39;m print tag &quot;&lt;p&gt;&quot; &amp; tag &quot;&lt;a&gt;&quot;, &amp; &quot;&lt;ul&gt;&quot;</code></p>
+
+<textarea id="input" name="input" rows="6" cols="100%" placeholder="Введите текст"></textarea>
+<br>
+<textarea id="output" name="output" rows="6" cols="100%" placeholder="Результат..."></textarea>
+<br>
+<button id="convert" type="button">Преобразовать</button>
+
+<script>
+	const inputElement = document.querySelector('#input');
+	const outputElement = document.querySelector('#output');
+	const button = document.querySelector('#convert');
+
+	const convertObject = {
+		'&': '&amp;',
+		'\'': '&#39;',
+		'"': '&quot;',
+		'<': '&lt;',
+		'>': '&gt;',
+	}
+
+	button.addEventListener('click', function() {
+		let outputText = inputText = inputElement.value;
+
+		for (const item in convertObject) {
+			outputText = outputText.replaceAll(item, convertObject[item]);
+			console.log(`Замена ${item} на ${convertObject[item]}`);
+		}
+
+		outputElement.value = outputText;
+	});
+</script>

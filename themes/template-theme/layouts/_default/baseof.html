@@ -5,12 +5,15 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>{{ block "title" . }}{{ .Title }}{{ end }}</title>
-
 		<!-- Мета данные -->
 		{{ block "meta" . }}{{ end }}
 
 		<!-- Блок стилей -->
 		{{ block "styles" . }}{{ end }}
+
+		<!-- Yandex.RTB -->
+		<script>window.yaContextCb=window.yaContextCb||[]</script>
+		<script src="https://yandex.ru/ads/system/context.js" async></script>
 	</head>
 	<body>
 		<!-- Основная часть страницы -->
