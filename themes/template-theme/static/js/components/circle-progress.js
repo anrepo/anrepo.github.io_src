@@ -29,7 +29,6 @@ let progressCircle = (function() {
             circles[itemName] = new Circle(itemProgress, itemName);
         }
     }
-    
 
     return {
         init: init,
