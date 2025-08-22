@@ -21,3 +21,6 @@
 
 [feedback]
 	other = 'Обратная связь'
+
+[section-about]
+	other = 'Привет, меня зовут Андрей!'

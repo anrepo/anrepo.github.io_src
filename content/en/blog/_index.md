@@ -1,6 +1,6 @@
 ---
-title: "Articles"
-date: 2022-06-27T22:04:47+03:00
+title: "Блог"
+date: 2022-06-03T21:37:28+03:00
 author: "Apol"
 draft: false
 ---

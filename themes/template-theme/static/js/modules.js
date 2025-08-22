@@ -1,11 +1,12 @@
 // Components
-import {headCarousel} from './components/carousel.js';
-import {progressCircle} from './components/circle-progress.js';
-import {themeButton} from './components/theme-mode.js';
-import {anchorSlider} from './components/goto-anchor.js';
-import {toTopBtn} from './components/goto-top-button.js';
-import {navMenu} from './components/header-nav-menu.js';
-import {readingProcess} from './components/reading-process.js';
+import { headCarousel } from './components/carousel.js';
+import { progressCircle } from './components/circle-progress.js';
+import { themeButton } from './components/theme-mode.js';
+import { anchorSlider } from './components/goto-anchor.js';
+import { toTopBtn } from './components/goto-top-button.js';
+import { navMenu } from './components/header-nav-menu.js';
+import { readingProcess } from './components/reading-process.js';
+import { yearActualize } from './components/actual-year.js';
 
 // Pages
 import {homePage} from "./pages/home.js";
@@ -20,6 +21,7 @@ anchorLinks         = anchorSlider;
 topButton           = toTopBtn;
 navLinks            = navMenu;
 readingBar          = readingProcess;
+setActualYear       = yearActualize;
 
 /**
  * Инициализация Режима переключения цветовой темы
@@ -33,7 +35,7 @@ themeMode.init();
  */
 introduceCarousel.init();
 
-/** 
+/**
  * Инициализация круговых прогресс баров скилов
  */
 cirleProgressBar.init();
@@ -65,3 +67,8 @@ navLinks.init();
  * Инициализация Главной страницы
  */
 homePage.init();
+
+/**
+ * Устанавливает текущий год элементам с классом 'js--set-actual-year'
+ */
+setActualYear.init();

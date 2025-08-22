@@ -5,7 +5,8 @@ let introduceCarousel,
 	anchorLinks,
 	topButton,
 	navLinks,
-	readingBar;
+	readingBar,
+	setActualYear;
 
 // Global Variables
 let heightHeader;

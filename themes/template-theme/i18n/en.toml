@@ -1,2 +1,26 @@
 [posts]
     other = 'Posts'
+
+[home]
+	other = 'Home'
+
+[about]
+	other = 'About'
+
+[skills]
+	other = 'Skills'
+
+[projects]
+	other = 'Projects'
+
+[blog]
+	other = 'Blog'
+
+[contacts]
+	other = 'Contacts'
+
+[feedback]
+	other = 'Feedback'
+
+[section-about]
+	other = 'Hello, I am Andrey!'
