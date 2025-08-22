@@ -1,7 +1,7 @@
 let anchorSlider = (function() {
 
 	function init() {
-		console.log("init anchorSlider");
+		// console.log("init anchorSlider");
 
 		// Функционал для перехода по якорным ссылкам
 		let singleTitlesItem = document.querySelectorAll(".goToAnchor");
